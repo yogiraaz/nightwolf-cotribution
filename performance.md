@@ -15,7 +15,7 @@ Usually System Performance issues can be identified by observing slowness in ser
 We will try to break your investigation steps into major bullet points and helps you to find the root causes of the issue. 
 
 ## Tools helpful in your investigation: 
-![!image](img/TroubleShooting.jpg)
+![!image](../img/TroubleShooting.jpg)
 
   - <a href="https://linux.die.net/man/1/top" target="_blank">top</a>
   - <a href="https://linux.die.net/man/1/mpstat" target="_blank">mpstat</a>

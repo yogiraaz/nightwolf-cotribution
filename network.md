@@ -90,7 +90,7 @@
 
 
 ##Questions from Github
-A lot more Questions from my [Github page](https://raw.githubusercontent.com/v-nightwolf/nightwolf/main/network_questions_db)
+A lot more Questions from <a href="https://raw.githubusercontent.com/v-nightwolf/nightwolf-cotribution/main/network_questions_db" target="_blank">nightwolf-cotribution github repo</a>
 
 
      1. What is localhost and why would ping localhost fail?

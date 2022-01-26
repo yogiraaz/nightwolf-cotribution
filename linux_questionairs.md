@@ -212,7 +212,7 @@
 		a). singnal 15 (SIGTERM) is sent by default if you do not specify the signal type. 
 
 ##Questions from Github  
-A lot more Questions from my [Github page](https://raw.githubusercontent.com/v-nightwolf/nightwolf/main/linux_question_db)
+A lot more Questions from <a href="https://github.com/v-nightwolf/nightwolf-cotribution.git" target="_blank">nightwolf-cotribution github repo</a>
 
 
   # General Questions:
