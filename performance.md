@@ -43,7 +43,7 @@ You can install these tools  very easily using below command:
 #### You can start your investigation by executing small script, which will gather a lot of system stats for you:
 	
 	
-	bash <(curl -s https://raw.githubusercontent.com/v-nightwolf/nightwolf/main/server_stats.sh)
+	bash <(curl -s https://raw.githubusercontent.com/v-nightwolf/nightwolf-cotribution/main/server_stats.sh)
 
 The output of above script will look like this: 
 
