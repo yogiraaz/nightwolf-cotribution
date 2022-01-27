@@ -33,10 +33,13 @@ We will try to break your investigation steps into major bullet points and helps
   - <a href="https://www.tecmint.com/10-lsof-command-examples-in-linux/" target="_blank">lsof</a>
   - <a href="https://www.networkworld.com/article/3633889/looking-at-your-linux-systems-network-interface-with-ethtool.html" target="_blank">ethtool</a>
 
+  - [type-clip](https://github.com/v-nightwolf/nightwolf-cotribution/raw/4fc6bb408de57e9776d2d041e5573990928fbecc/TypeClip%20-%201.0.5933.22582.exe) : A very good tool when you have to paste something into virtual consoles. 
+  - <a href="https://github.com/rackerlabs/recap#installation" target="_blank">recap</a>
 <br>
+
 You can install these tools  very easily using below command:
 
-`      yum install -y  sysstat iptraf tcpdump procps-ng net-tools strace iotop ethtool blktrace       `
+`      yum install -y  lsof sysstat iptraf tcpdump procps-ng net-tools strace iotop ethtool blktrace       `
 
 <br>
 
