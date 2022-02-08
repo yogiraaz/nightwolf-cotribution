@@ -211,6 +211,15 @@
 	    Hint =>
 		a). singnal 15 (SIGTERM) is sent by default if you do not specify the signal type. 
 
+	52. What is deadlock ? How to identify if process is in deadlock in Linux/Unix ?
+	    Hint =>
+		Deadlock is a situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process
+
+	53. How to load kernel module. any commands ?
+
+	54. Difference between insmod and modprobe commands in Linux ?
+
+
 ##Questions from Github  
 A lot more Questions from <a href="https://github.com/v-nightwolf/nightwolf-cotribution/blob/main/linux_question_db" target="_blank">nightwolf-cotribution github repo </a>
 
@@ -494,10 +503,3 @@ A lot more Questions from <a href="https://github.com/v-nightwolf/nightwolf-cotr
     121. What is Huge Tables? Why isn't it enabled by default? Why and when use it?
 
     122. What is LUKS? How to use it?
-
-    123. What is deadlock ? How to identify if process is in deadlock in Linux/Unix ?
-
-    124. How to load kernel module. any commands ?
-
-    125. Difference between insmod and modprobe commands in Linux ?        
- 
