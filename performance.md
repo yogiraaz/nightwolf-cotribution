@@ -119,11 +119,11 @@ The output of above script will look like this:
            hi : time spent servicing hardware interrupts
            si : time spent servicing software interrupts
            st : time stolen from this vm by the hypervisor
-
-Above stats will guide your investigation into a specific direction. Depending on above CPU stats, you will be able to decide what to check next. 
+<br>
+    Above stats might guide your investigation into a specific direction. Depending on above CPU stats, you will be able to decide what to check next. 
 	
 	* If only "%us"(time running un-niced user processes) is high that means your application is consuming more
-	  CPU. Now you should deep dive into process stats and process trace. We will discuss thiin more detail soon.  
+	  CPU. Now you should deep dive into process stats and process trace. We will discuss this in more detail soon.  
 
 	* If only "%sy"(time running kernel processes) is high that means you kernel level system call are consuming
 	  the CPU. This usually happens when there is a bug in kernel packages. 
@@ -147,9 +147,46 @@ Above stats will guide your investigation into a specific direction. Depending o
 
 	* "%st"(time stolen from this vm by the hypervisor) means that virtual CPU is being spent waiting for the 
 	  Hypervisor to allocate CPU to virtual machine. This stat is only applicable to Virtual machines. 
-	  
+<br>
+    
+  If %us is high, that mean some process in user space is consuming the CPU. Next step would be to deep dive into
+    process stats: 
+
+    1. First identify the process consuming high CPU. This can be identified using "top" command. 
+
+    2. Once you have identified the process, note down its process id(pid).
+
+    3. Try tracing the process using stace command. This will throw a lot output onto the screen. 
+       starce -t -p PID_OF_PROCESS  => This will print wall clock time of each system call. 
+
+    4. Please check if process is getting stuck at any system call and note down system call and the resource system 
+       call is using. 
+
+    5. If system call is waiting for a File related I/O, then next step is to check file system call is waiting for.
+
+    6. Go to /proc/{$PID_OF_PROCESS}/
+<br>
 
 ## Performance issues due to high Memory Usage
+
+    d). 4th and 5th line in 'top' output contains Memory stats in Kibibytes(kib).
+        There is slight difference between kilibyte and kibibyte i.e 1 kB = 1000 bytes. 1 KiB = 1024 bytes.
+
+        As a default, line 4 reflects physical memory, classified as:
+           total, free, used and buff/cache
+
+        line 5 reflects mostly virtual memory(swap), classified as:
+           total, free, used and avail
+
+        total: Total size of memory available to system. 
+
+        free: Size of memory which in un-utilized.  
+
+        used: Size of memory currently utilized by processes+System.
+
+        buff/cache: Size of memory utilized by system for kernel buffers(i.e. buff) and page cache and slabs(i.e. cache)
+
+
 
 ## Performance issues due to high Disk IO Usage
 
