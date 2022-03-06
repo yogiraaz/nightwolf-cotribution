@@ -1,4 +1,6 @@
-## Linux General Questions:
+## Linux General Interview  Questions:
+---
+
        1.What is two types of Linux User Mode ?
          Command Line
          GUI

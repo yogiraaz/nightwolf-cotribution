@@ -1,4 +1,4 @@
-### AWS Certified SysOps Administrator – Associate
+### AWS Certified SysOps Administrator - Questions and answers
 
    QUESTION NO: 1
 
