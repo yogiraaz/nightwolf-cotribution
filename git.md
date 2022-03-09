@@ -1,4 +1,13 @@
-### GIT Interview Questions and Answers
+### Top 50 GIT Interview Questions and Answers for DevOps Roles - Solved
+
+ We have consolidated a list of frequently asked GIT interview questions for DevOps Engineer Experianced.
+ You will find these questions very helpful in your interviews for DevOps Engineer. Prepare well and All the very best.
+<br>
+
+  All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
+ 
+
+---
        
    Q1) What is a version control system (VCS)?
 
@@ -16,8 +25,8 @@
    Q3) What are distributed version control systems (DVCS)?
 
        Distributed revision control synchronizes repositories by transferring patches from peer to peer.
-       There is no single c
-       Hence not requiring to be connected to the server all the time.
+       There is no single central version of the codebase instead, each user can download a working copy and full
+       change history.  Hence not requiring to be connected to the server all the time.
        Example : GIT
 
    Q4) What are centralized version control systems (CVCS)?

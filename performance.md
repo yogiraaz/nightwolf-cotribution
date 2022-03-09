@@ -15,6 +15,9 @@ Usually System Performance issues can be identified by observing slowness in ser
 We will try to break your investigation steps into major bullet points and helps you to find the root causes of the issue. 
 
 ## Tools helpful in your investigation: 
+
+Below listed tools are Linux performance monitoring tools, which will help you find out the root cause of the issue,
+
 ![!image](../img/TroubleShooting.jpg)
 
   - <a href="https://linux.die.net/man/1/top" target="_blank">top</a>
@@ -84,7 +87,7 @@ The output of above script will look like this:
 
 	############################################
 
-## Perfomance isssues due to high CPU Usage
+## Troubleshooting Linux perfomance isssue happening due to high CPU Usage
 
    Every performance issue troubleshooting should starts with `top` command:
 
@@ -167,7 +170,7 @@ The output of above script will look like this:
     6. Go to /proc/{$PID_OF_PROCESS}/
 <br>
 
-## Performance issues due to high Memory Usage
+## Troubleshooting Linux performance issue happening due to high Memory Usage
 
     d). 4th and 5th line in 'top' output contains Memory stats in Kibibytes(kib).
         There is slight difference between kilibyte and kibibyte i.e 1 kB = 1000 bytes. 1 KiB = 1024 bytes.
@@ -188,6 +191,6 @@ The output of above script will look like this:
 
 
 
-## Performance issues due to high Disk IO Usage
+## Troubleshooting Linux performance issue happening due to high Disk IO Usage
 
-## Network Performance Issues
+## Troubleshooting Linux OS network performance Issues
