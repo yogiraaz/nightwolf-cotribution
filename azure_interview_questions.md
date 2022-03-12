@@ -23,15 +23,19 @@
         You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource 
         group.
 
-        Solution: On Subscription1, you assign the Logic App Operator role to the Developers group. Does this meet the goal?
+        Solution: On Subscription1, you assign the Logic App Operator role to the Developers group. Does this meet
+                  the goal?
+
         A. Yes
         B. No
 
         Correct Answer: B
 
         Explanation:
-        You would need the Logic App Contributor role. References:
-        https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app
+        You would need the Logic App Contributor role. 
+   References:<br>
+    - <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles" target="_blank">https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles</a>
+    <br>- <a href="https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app" target="_blank">https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app</a>
 
    QUESTION 3
 
@@ -48,8 +52,11 @@
         The Logic App Contributor role lets you manage logic app, but not access to them. It provides access to view,
         edit, and update a logic app.
 
-        References:
-        https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app
+   References:<br>
+    - <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles" target="_blank">https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles</a>
+    <br>- <a href="https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app" target="_blank">https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app</a>
+
+
 
    QUESTION 4
 
@@ -69,34 +76,45 @@
         Explanation:
         To search a term in a specific table, add in (table-name) just after the search operator
 
-        References:
-        https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/search-queries https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal
+   References:<br>
+    - <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/search-queries" target="_blank">https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/search-queries</a>
+    <br>- <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal" target="_blank">https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal</a>
 
-        QUESTION 5
+
+
+   QUESTION 5
 
         You have an Azure subscription named Subscription1. Subscription1 contains the resource groups in the following table.
         RG1 has a web app named WebApp1. WebApp1 is located in West Europe. You move WebApp1 to RG2.
         What is the effect of the move?
+
         A. The App Service plan for WebApp1 moves to North Europe. Policy2 applies to WebApp1.
         B. The App Service plan for WebApp1 remains in West Europe. Policy2 applies to WebApp1.
         C. The App Service plan for WebApp1 moves to North Europe. Policy1 applies to WebApp1.
         D. The App Service plan for WebApp1 remains in West Europe. Policy1 applies to WebApp1.
+
         Correct Answer: B Section: [none] Explanation
-        Explanation/Reference:
+
         Explanation:
         You can move an app to another App Service plan, as long as the source plan and the target plan are in the same resource group and geographical region.
         The region in which your app runs is the region of the App Service plan it's in. However, you cannot change an App Service plan's region.
-        References:
-        https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage
-        QUESTION 6
+
+   References:<br>
+    - <a href="https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage" target="_blank">https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage</a>
+
+   QUESTION 6
+
         You have an Azure subscription that contains a resource group named RG1. RG1 contains 100 virtual machines.
         Your company has three cost centers named Manufacturing, Sales, and Finance. You need to associate each virtual machine to a specific cost center.
         What should you do?
+
         A. Configure locks for the virtual machine.
         B. Add an extension to the virtual machines.
         C. Assign tags to the virtual machines.
         D. Modify the inventory settings of the virtual machine.
+
         Correct Answer: C Section: [none] Explanation
+
         Explanation/Reference:
         References:
         https://docs.microsoft.com/en-us/azure/billing/billing-getting-started https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-using-tags

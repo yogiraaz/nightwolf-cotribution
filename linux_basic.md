@@ -1201,3 +1201,7 @@
                timeout=10
                splashimage=(hd0,0)/grub/splash.xpm.gz
                password –md5 $1$3yQFp$MEDEglsxOvuTWzWaztRly.
+
+
+[<h3 style="text-align: center;font-family: cursive;"> Next Page </h3>](linux_interview_questions_for_freshers.md)
+

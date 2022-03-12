@@ -225,3 +225,6 @@
        affecting the original project. Generally open source projects follow fork workflow to allow users to 
        contribute to the project.
        
+
+[<h3 style="text-align: center;font-family: cursive;"> GIT Cheat Sheet </h3>](git_cheatsheet.md)
+

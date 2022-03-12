@@ -269,3 +269,6 @@
 
         76. What is a level 0 backup? What is an incremental backup?
 
+
+[<h3 style="text-align: center;font-family: cursive;"> Next Page </h3>](linux_L2.md)
+

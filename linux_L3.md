@@ -307,5 +307,5 @@
       74. What is LUKS? How to use it?
 
 
-
+[<h1 style="text-align: center;font-family: cursive;"> Next Page </h1>](network.md)
 
