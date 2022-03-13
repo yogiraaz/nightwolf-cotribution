@@ -1,7 +1,7 @@
 ### AWS Certified SysOps Administrator - Questions and answers
 
 <br>
-This are AWS interview questions for experianced professionals.  You will find these questions very helpful in your AWS professional role interviews. Prepare well and All the very best.
+These are AWS interview questions for experianced professionals.  You will find these questions very helpful in your AWS professional role interviews. Prepare well and All the very best.
 <br>
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
