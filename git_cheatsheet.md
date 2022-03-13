@@ -121,3 +121,22 @@ Temporarily store modified, tracked files in order to change branches
 | 2  |git stash list                       | List stack-order of stashed file changes|
 | 3  |git stash pop                        | Write working from top of stash stack|
 | 4  |git stash drop                       | Discard the changes from top of stash stack|
+
+
+---
+
+<br>
+
+You may also refer to other articles on this website:
+
+* [Linux Interview Questions for Freshers](linux_basic.md)
+* [Linux Interview Questions for Freshers-2](linux_interview_questions_for_freshers.md)
+* [Linux Interview Questions for Freshers and Experianced - L1](linux_L1.md)
+* [Linux Interview Questions for Experianced Linux Admins - L2](linux_L2.md)
+* [Advanced Linux Interview Questions for Experianced Admins - L3](linux_L3.md)
+* [OS Network Interview Questions](network.md)
+* [AWS interview questions for experianced professionals](aws.md)
+* [DevOps Interview Questions for Freshers and Experianced](devops_interview_questions.md)
+* [DevOps Interview Questions for Freshers and Experianced-2](devops_interview_questions-2.md)
+* [Jenkins Interview Questions for Experianced DevOps Engineer](jenkins.md)
+* [Interview materials](reference.md)
