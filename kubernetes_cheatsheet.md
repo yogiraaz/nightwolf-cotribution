@@ -251,4 +251,3 @@ You may also refer to other articles on this website:
 * [DevOps Interview Questions for Freshers and Experianced](devops_interview_questions.md)
 * [DevOps Interview Questions for Freshers and Experianced-2](devops_interview_questions-2.md)
 * [Jenkins Interview Questions for Experianced DevOps Engineer](jenkins.md)
-* [Interview materials](reference.md)
