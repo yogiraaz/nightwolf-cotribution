@@ -91,8 +91,9 @@
     	21. How do you set the mail address of the root/a user?
 		Hint =>
 			The system administrator can define email aliases in the file /etc/aliases. This file contains lines
-			like root: cwd@mailhost.example.com, /root/mailbox; the effect is the same as having cwd@mailhost.example.com,
-			/root/mailbox in ~root/.forward. You may need to run a program such as newaliases after changing /etc/aliases.
+			like root: cwd@mailhost.example.com, /root/mailbox; the effect is the same as having 
+                        cwd@mailhost.example.com, root/mailbox in ~root/.forward. You may need to run a program 
+                        such as newaliases after changing /etc/aliases.
 
     	22. What does CTRL-c do?
 		Hint => 
@@ -124,7 +125,8 @@
 
     	29. Which difference have between public and private SSH keys?
 
-    	30. Explain the three load averages and what do they indicate. What command can be used to view the load averages?
+    	30. Explain the three load averages and what do they indicate. What command can be used to view 
+            the load averages?
 
     	31. Can you name a lower-case letter that is not a valid option for GNU ls?
 
@@ -175,7 +177,8 @@
 
     	46. What does the immutable bit do to a file?
 
-    	47. What is the difference between hardlinks and symlinks? What happens when you remove the source to a symlink/hardlink?
+    	47. What is the difference between hardlinks and symlinks? What happens when you remove the source to 
+            a symlink/hardlink?
 
     	48. What is an inode and what fields are stored in an inode?
 
@@ -272,3 +275,17 @@
 
 [<h3 style="text-align: center;font-family: cursive;"> Next Page </h3>](linux_L2.md)
 
+
+You may also refer to:
+
+* [Linux Interview Questions for Freshers](nightwolf-cotribution/linux_basic.md)
+* [Linux Interview Questions for Freshers-2](nightwolf-cotribution/linux_interview_questions_for_freshers.md)
+* [Linux Interview Questions for Experianced Linux Admins - L2](nightwolf-cotribution/linux_L2.md)
+* [Advanced Linux Interview Questions for Experianced Admins - L3](nightwolf-cotribution/linux_L3.md)
+* [OS Network Interview Questions](nightwolf-cotribution/network.md)
+* [AWS interview questions for experianced professionals](nightwolf-cotribution/aws.md)
+* [DevOps Interview Questions for Freshers and Experianced](nightwolf-cotribution/devops_interview_questions.md)
+* [DevOps Interview Questions for Freshers and Experianced-2](nightwolf-cotribution/devops_interview_questions-2.md)
+* [GIT Interview Questions for DevOps Roles](nightwolf-cotribution/git.md)
+* [Jenkins Interview Questions for Experianced DevOps Engineer](nightwolf-cotribution/jenkins.md)
+* [Interview materials](reference.md)
