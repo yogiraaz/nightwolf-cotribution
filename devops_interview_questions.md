@@ -622,4 +622,3 @@ You may also refer to:
 * [DevOps Interview Questions for Freshers and Experianced-2](devops_interview_questions-2.md)
 * [GIT Interview Questions for DevOps Roles](git.md)
 * [Jenkins Interview Questions for Experianced DevOps Engineer](jenkins.md)
-* [Interview materials](reference.md)
