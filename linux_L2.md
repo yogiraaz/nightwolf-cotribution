@@ -20,7 +20,7 @@
            Hint =>
                 "Systemd" is an enhanced version of "init". "sysytemd" was launched with RHEL 7.x has capability
                 to start the services in parallel. Please refer to below table for more information. 
-![](systemdvsinit.jpeg)  |  ![](systemdvsinit-2.jpeg)
+![](../img/systemdvsinit.jpeg) ![](../img/systemdvsinit-2.jpeg)
 
         4. What are the inodes and how will you free up them?
 
