@@ -1,7 +1,7 @@
 # Linux 200+ Interview Questions for Freshers - Solved:
 ---
 <br>
-  We have prepared a set of questions to help Freshers and Experianced Linux Admins in their preparations for Interview.
+  We have prepared a set of questions to help Freshers and Experienced Linux Admins in their preparations for Interview.
   This list includes Google interview questions for Linux Admin, Amazon interview questions for Linux admin and other reputed firms as well.   
   You will find these questions very helpful in your Linux Admins interviews. Prepare well and All the very best. 
 <br>
@@ -456,12 +456,12 @@ The /boot file is most likely corrupted
 You may also refer to:
 
 * [Linux Interview Questions for Freshers](linux_basic.md)
-* [Linux Interview Questions for Freshers and Experianced - L1](linux_L1.md)
-* [Linux Interview Questions for Experianced Linux Admins - L2](linux_L2.md)
-* [Advanced Linux Interview Questions for Experianced Admins - L3](linux_L3.md)
+* [Linux Interview Questions for Freshers and Experienced - L1](linux_L1.md)
+* [Linux Interview Questions for Experienced Linux Admins - L2](linux_L2.md)
+* [Advanced Linux Interview Questions for Experienced Admins - L3](linux_L3.md)
 * [OS Network Interview Questions](network.md)
-* [AWS interview questions for experianced professionals](aws.md)
-* [DevOps Interview Questions for Freshers and Experianced](devops_interview_questions.md)
-* [DevOps Interview Questions for Freshers and Experianced-2](devops_interview_questions-2.md)
+* [AWS interview questions for experienced professionals](aws.md)
+* [DevOps Interview Questions for Freshers and Experienced](devops_interview_questions.md)
+* [DevOps Interview Questions for Freshers and Experienced-2](devops_interview_questions-2.md)
 * [GIT Interview Questions for DevOps Roles](git.md)
-* [Jenkins Interview Questions for Experianced DevOps Engineer](jenkins.md)
+* [Jenkins Interview Questions for Experienced DevOps Engineer](jenkins.md)

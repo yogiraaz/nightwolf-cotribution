@@ -1,7 +1,7 @@
 # Docker interview questions and Answers 
 ---
 
- We have consolidated a list of frequently asked Docker interview questions for Freshers and Experianced. This will help DevOps Engineers in their preparations for Interview. 
+ We have consolidated a list of frequently asked Docker interview questions for Freshers and Experienced. This will help DevOps Engineers in their preparations for Interview. 
   You will find these questions very helpful in your DevOps interviews. Prepare well and All the very best.
 <br>
 

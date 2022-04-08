@@ -1,7 +1,7 @@
 ### AWS Certified SysOps Administrator - Questions and answers
 
 <br>
-These are AWS interview questions for experianced professionals.  You will find these questions very helpful in your AWS professional role interviews. Prepare well and All the very best.
+These are AWS interview questions for experienced professionals.  You will find these questions very helpful in your AWS professional role interviews. Prepare well and All the very best.
 <br>
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
@@ -6345,11 +6345,11 @@ You may also refer to:
 
 * [Linux Interview Questions for Freshers](linux_basic.md)
 * [Linux Interview Questions for Freshers-2](linux_interview_questions_for_freshers.md)
-* [Linux Interview Questions for Freshers and Experianced - L1](linux_L1.md)
-* [Linux Interview Questions for Experianced Linux Admins - L2](linux_L2.md)
-* [Advanced Linux Interview Questions for Experianced Admins - L3](linux_L3.md)
+* [Linux Interview Questions for Freshers and Experienced - L1](linux_L1.md)
+* [Linux Interview Questions for Experienced Linux Admins - L2](linux_L2.md)
+* [Advanced Linux Interview Questions for Experienced Admins - L3](linux_L3.md)
 * [OS Network Interview Questions](network.md)
-* [DevOps Interview Questions for Freshers and Experianced](devops_interview_questions.md)
-* [DevOps Interview Questions for Freshers and Experianced-2](devops_interview_questions-2.md)
+* [DevOps Interview Questions for Freshers and Experienced](devops_interview_questions.md)
+* [DevOps Interview Questions for Freshers and Experienced-2](devops_interview_questions-2.md)
 * [GIT Interview Questions for DevOps Roles](git.md)
-* [Jenkins Interview Questions for Experianced DevOps Engineer](jenkins.md)
+* [Jenkins Interview Questions for Experienced DevOps Engineer](jenkins.md)

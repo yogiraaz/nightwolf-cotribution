@@ -1,9 +1,9 @@
-# Linux Interview Questions and Answers for Experianced Linux Admins - Solved
+# Linux Interview Questions and Answers for Experienced Linux Admins - Solved
 
 <br>
-  We have prepared a set of questions to help Freshers and Experianced Linux Admins in their preparations for Interview.
+  We have prepared a set of questions to help Freshers and Experienced Linux Admins in their preparations for Interview.
   This list includes Google interview questions for Linux (Infrastructure specialist), Amazon interview questions for Linux (Cloud Support Engineer - II) and other reputed firms as well.   
-  Most of these are scenario based Linux interview questions for Experianced Linux Admins.
+  Most of these are scenario based Linux interview questions for Experienced Linux Admins.
   You will find these questions very helpful in your Linux Admins interviews. Prepare well and All the very best.
 <br>
 
@@ -209,11 +209,11 @@ You may also refer to:
 
 * [Linux Interview Questions for Freshers](linux_basic.md)
 * [Linux Interview Questions for Freshers-2](linux_interview_questions_for_freshers.md)
-* [Linux Interview Questions for Freshers and Experianced - L1](linux_L1.md)
-* [Advanced Linux Interview Questions for Experianced Admins - L3](linux_L3.md)
+* [Linux Interview Questions for Freshers and Experienced - L1](linux_L1.md)
+* [Advanced Linux Interview Questions for Experienced Admins - L3](linux_L3.md)
 * [OS Network Interview Questions](network.md)
-* [AWS interview questions for experianced professionals](aws.md)
-* [DevOps Interview Questions for Freshers and Experianced](devops_interview_questions.md)
-* [DevOps Interview Questions for Freshers and Experianced-2](devops_interview_questions-2.md)
+* [AWS interview questions for experienced professionals](aws.md)
+* [DevOps Interview Questions for Freshers and Experienced](devops_interview_questions.md)
+* [DevOps Interview Questions for Freshers and Experienced-2](devops_interview_questions-2.md)
 * [GIT Interview Questions for DevOps Roles](git.md)
-* [Jenkins Interview Questions for Experianced DevOps Engineer](jenkins.md)
+* [Jenkins Interview Questions for Experienced DevOps Engineer](jenkins.md)

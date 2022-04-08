@@ -1,7 +1,7 @@
-# DevOps Interview Question and Answered for Freshers and Experianced
+# DevOps Interview Question and Answered for Freshers and Experienced
 ---
 
- We have consolidated a list of frequently asked DevOps interview questions for Freshers and Experianced. This will help DevOps Engineers in their preparations for Interview. 
+ We have consolidated a list of frequently asked DevOps interview questions for Freshers and Experienced. This will help DevOps Engineers in their preparations for Interview. 
   You will find these questions very helpful in your DevOps interviews. Prepare well and All the very best.
 <br>
 
@@ -614,11 +614,11 @@ You may also refer to:
 
 * [Linux Interview Questions for Freshers](linux_basic.md)
 * [Linux Interview Questions for Freshers-2](linux_interview_questions_for_freshers.md)
-* [Linux Interview Questions for Freshers and Experianced - L1](linux_L1.md)
-* [Linux Interview Questions for Experianced Linux Admins - L2](linux_L2.md)
-* [Advanced Linux Interview Questions for Experianced Admins - L3](linux_L3.md)
+* [Linux Interview Questions for Freshers and Experienced - L1](linux_L1.md)
+* [Linux Interview Questions for Experienced Linux Admins - L2](linux_L2.md)
+* [Advanced Linux Interview Questions for Experienced Admins - L3](linux_L3.md)
 * [OS Network Interview Questions](network.md)
-* [AWS interview questions for experianced professionals](aws.md)
-* [DevOps Interview Questions for Freshers and Experianced-2](devops_interview_questions-2.md)
+* [AWS interview questions for experienced professionals](aws.md)
+* [DevOps Interview Questions for Freshers and Experienced-2](devops_interview_questions-2.md)
 * [GIT Interview Questions for DevOps Roles](git.md)
-* [Jenkins Interview Questions for Experianced DevOps Engineer](jenkins.md)
+* [Jenkins Interview Questions for Experienced DevOps Engineer](jenkins.md)
