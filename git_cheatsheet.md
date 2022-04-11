@@ -1,4 +1,6 @@
-<h1 style="text-align: center;"> GIT Cheatsheet </h1>
+<h1 style="text-align: center;"> GIT Cheat Sheet </h1>
+
+This page consists of most useful git commands which can be helful for your day to day job.
 
 ---
 

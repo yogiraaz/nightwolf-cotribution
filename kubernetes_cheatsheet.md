@@ -1,4 +1,6 @@
-<h1 style="text-align: center;"> Kubernetes Cheatsheet </h1>
+<h1 style="text-align: center;"> Kubernetes Cheat Sheet </h1>
+
+This article consists a list of kubectl commands which are helpful for your day to day job. 
 
 ---
 ## Creating Objects

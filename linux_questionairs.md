@@ -311,7 +311,7 @@
 ---
 
 ##Questions from Github  
-A lot more Questions from <a href="https://github.com/v-nightwolf/nightwolf-cotribution/blob/main/linux_question_db" target="_blank">nightwolf-cotribution github repo </a>
+A lot more Questions from <a href="https://github.com/v-nightwolf/nightwolf-cotribution/blob/main/linux_questionairs.md" target="_blank">nightwolf-cotribution github repo </a>
 
 
   # General Questions:

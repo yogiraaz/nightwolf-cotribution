@@ -1,8 +1,9 @@
 # Advanced Linux Interview Questions for Experienced Linux Admins - Solved
 <br>
-    We have prepared a set of questions to help Freshers and Experienced Linux Admins in their preparations for Interview.
-    This list includes Google interview questions for Linux (Infrastructure specialist), Amazon interview questions for Linux (Cloud Support Engineer - II) and other reputed firms as well.   
-    Most of these are scenario based Linux interview questions for Experienced Linux Admins.
+    We have prepared a set of questions to help Experienced Linux Admins in their preparations for Interview.
+    This list includes Google interview questions for Infrastructure specialist position, Amazon's Cloud Support Engineer - II position and other reputed firm's interviews as well.   
+
+  Most of these are scenario based Linux interview questions for Experienced Linux Admins.
     You will find these questions very helpful in your Linux Admins interviews. Prepare well and All the very best.
 <br>
 
