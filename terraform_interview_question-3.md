@@ -1,141 +1,173 @@
+# Top 250 Questions and Answers For Terraform Associate Certification - 2
+---
 
+ We have consolidated a list of frequently asked questions in Terraform AssociateCertification. Same list consists of frequently asked Terraform interview questions. This will help DevOps Engineers in their preparations for Interview.
+  You will find these questions very helpful in your DevOps interviews. Prepare well and All the very best.
+<br>
 
+  All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
 
+---
 
 179. What are Backends?
-A "backend" in Terraform determines how state is loaded and how an operation such as
-apply
-is executed. This abstraction enables non-local file state storage, remote execution, etc.
-By default, Terraform uses the "local" backend, which is the normal behavior of Terraform
+
+        A "backend" in Terraform determines how state is loaded and how an operation such as apply is executed. 
+        This abstraction enables non-local file state storage, remote execution, etc. By default, Terraform uses
+        the "local" backend, which is the normal behavior of Terraform.
+
 180. What is local Backend?
-The local backend stores state on the local filesystem, locks that state using system APIs, and performs operations locally.
-17/01/2022, 23:18 250 Practice Questions For Terraform Associate Certifi cation | by Bhargav Bachina | Bachina Labs | Medium
-https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certifi cation-7a3ccebe6a1a 51/72
-// Example
-terraform {
-backend "local" {
-path
-=
-"relative/path/to/terraform.tfstate"
-}
-}
+
+        The local backend stores state on the local filesystem, locks that state using system APIs, and performs
+        operations locally.
+
+        // Example
+          terraform {
+            backend "local" {
+              path = "relative/path/to/terraform.tfstate"
+            }
+          }
+
 181. What is the default path for the local backend?
-This defaults to "terraform.tfstate" relative to the root module by default.
+
+        This defaults to "terraform.tfstate" relative to the root module by default.
+
 182. What is State Locking?
-If supported by your
-backend
-, Terraform will lock your state for all operations that could write state. This prevents others from acquiring the lock and potentially corrupting your state.
-State locking happens automatically on all operations that could write state. You won't see any message that it is happening. If state locking fails, Terraform will not continue.
+
+        If supported by your backend, Terraform will lock your state for all operations that could write state.
+        This prevents others from acquiring the lock and potentially corrupting your state. State locking happens
+        automatically on all operations that could write state. You will not see any message that it is happening.
+        If state locking fails, Terraform will not continue.
+
 183. Does Terraform continue if state locking fails?
-No.
-If state locking fails, Terraform will not continue.
+
+        No.
+
+        If state locking fails, Terraform will not continue.
+
 184. Can you disable state locking?
-Yes.
-You can disable state locking for most commands with the
--lock
-flag but it is not recommended.
+
+        Yes.
+
+        You can disable state locking for most commands with the -lock flag but it is not recommended.
+
 185. What are the types of Backend?
-17/01/2022, 23:18 250 Practice Questions For Terraform Associate Certifi cation | by Bhargav Bachina | Bachina Labs | Medium
-https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certifi cation-7a3ccebe6a1a 52/72
-Standard:
-State management, functionality covered in
-State Storage & Locking
-Enhanced
-: Everything in standard plus
-remote operations
-.
+
+        Standard: State management, functionality covered in State Storage & Locking.
+
+        Enhanced: Everything in standard plus remote operations.
+
 186. What are remote Backends?
-Remote backends allow Terraform to use a shared storage space for state data, so any member of your team can use Terraform to manage the same infrastructure.
+
+        Remote backends allow Terraform to use a shared storage space for state data, so any member of your team
+        can use Terraform to manage the same infrastructure.
+
 187. What is the benefit of using remote backend?
-Remote state storage makes collaboration easier and keeps state and secret information off your local disk.
-Remote state is loaded only in memory when it is used.
+
+        Remote state storage makes collaboration easier and keeps state and secret information off your local disk.
+        Remote state is loaded only in memory when it is used.
+
 188. If you want to switch from using remote backend to local backend. Whatshould you do?
-If you want to move back to local state, you can remove the backend configuration block from your configuration and run
-terraform init
-again.
-Terraform will once again ask if you want to migrate your state back to local.
+
+        If you want to move back to local state, you can remove the backend configuration block from your
+        configuration and run terraform init again.
+        Terraform will once again ask if you want to migrate your state back to local.
+
 189. What does the command refresh do?
-The
-terraform refresh
-command is used to reconcile the state Terraform knows about (via its state file) with the real-world infrastructure.
-This can be used to detect any drift from the last-known state, and to update the state file.
-17/01/2022, 23:18 250 Practice Questions For Terraform Associate Certifi cation | by Bhargav Bachina | Bachina Labs | Medium
-https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certifi cation-7a3ccebe6a1a 53/72
+
+        The "terraform refresh" command is used to reconcile the state Terraform knows about (via its state file)
+        with the real-world infrastructure. This can be used to detect any drift from the last-known state, and to
+        update the state file.
+
 190. Does the command refresh modify the infrastructure?
-The command
-refresh
-does not modify infrastructure, but does modify the state file.
-If the state is changed, this may cause changes to occur during the next plan or apply.
+
+        The command "refresh" does not modify infrastructure, but does modify the state file.
+        If the state is changed, this may cause changes to occur during the next plan or apply.
+
 191. How do you backup the state to the remote backend?
-1. When configuring a backend for the first time (moving from no defined backend to explicitly configuring one), Terraform will give you the option to migrate your state to the new backend. This lets you adopt backends without losing any existing state.
-2. To be extra careful, we always recommend manually backing up your state as well. You can do this by simply copying your
-terraform.tfstate
-file to another location.
+
+        1. When configuring a backend for the first time (moving from no defined backend to explicitly configuring
+           one), Terraform will give you the option to migrate your state to the new backend. This lets you adopt
+           backends without losing any existing state.
+
+        2. To be extra careful, we always recommend manually backing up your state as well. You can do this by
+           simply copying your "terraform.tfstate" file to another location.
+
 192. What is a partial configuration in terms of configuring Backends?
-You do not need to specify every required argument in the backend configuration. Omitting certain arguments may be desirable to avoid storing secrets, such as access keys, within the main configuration. When some or all of the arguments are omitted, we call this a
-partial configuration.
+
+        You do not need to specify every required argument in the backend configuration. Omitting certain arguments
+        may be desirable to avoid storing secrets, such as access keys, within the main configuration. When some or
+        all of the arguments are omitted, we call this a partial configuration.
+
 193. What are the ways to provide remaining arguments when using partialconfiguration?
-Interactively
-: Terraform will interactively ask you for the required values, unless interactive input is disabled. Terraform will not prompt for optional values.
-File
-: A configuration file may be specified via the
-init
-command line. To specify a file, use the
--backend-config=PATH
-option when running
-terraform init
-. If the file contains secrets it may be kept in a secure data store, such as
-Vault
-, in which case it must be downloaded to the local disk before running Terraform.
-17/01/2022, 23:18 250 Practice Questions For Terraform Associate Certifi cation | by Bhargav Bachina | Bachina Labs | Medium
-https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certifi cation-7a3ccebe6a1a 54/72
-Command-line key/value pairs
-: Key/value pairs can be specified via the
-init
-command line. Note that many shells retain command-line flags in a history file, so this isn't recommended for secrets. To specify a single key/value pair, use the
--backend-config="KEY=VALUE"
-option when running
-terraform init
-.
-https://www.terraform.io/docs/backends/config.html
+
+        Interactively: Terraform will interactively ask you for the required values, unless interactive input is 
+                       disabled. Terraform will not prompt for optional values.
+
+        File: A configuration file may be specified via the init command line. To specify a file, use the 
+              -backend-config=PATH option when running terraform init. If the file contains secrets it may be kept
+              in a secure data store, such as Vault, in which case it must be downloaded to the local disk before
+              running Terraform.
+
+        Command-line key-value pairs: Key/value pairs can be specified via the init command line. Note that many
+                      shells retain command-line flags in a history file, so this isn't recommended for secrets.
+                      To specify a single key/value pair, use the -backend-config="KEY=VALUE" option when running
+                      terraform init.
+
+      Ref: <a target="_blank" href=https://www.terraform.io/docs/backends/config.html>https://www.terraform.io/docs/backends/config.html</a>
+
 194. What is the basic requirement when using partial configuration?
-When using partial configuration, Terraform requires at a minimum that an empty backend configuration is specified in one of the root Terraform configuration files, to specify the backend type
-// Example
-terraform {
-backend "consul" {}
-}
+
+        When using partial configuration, Terraform requires at a minimum that an empty backend configuration is
+        specified in one of the root Terraform configuration files, to specify the backend type.
+
+        // Example
+
+          terraform {
+            backend "consul" {}
+          }
+
 195. Give an example of passing partial configuration with Command-lineKey/Value pairs?
-terraform init \
--backend-config="address=demo.consul.io" \
--backend-config="path=example_app/terraform_state" \
--backend-config="scheme=https"
+
+        terraform init \
+          -backend-config="address=demo.consul.io" \
+          -backend-config="path=example_app/terraform_state" \
+          -backend-config="scheme=https"
+
 196. How to unconfigure a backend?
-If you no longer want to use any backend, you can simply remove the configuration from the file. Terraform will detect this like any other change and prompt you to
-reinitialize
-.
-As part of the reinitialization, Terraform will ask if you'd like to migrate your state back down to normal local state. Once this is complete then Terraform is back to behaving as it does by default.
+
+        If you no longer want to use any backend, you can simply remove the configuration from the file. Terraform
+        will detect this like any other change and prompt you to reinitialize.
+        As part of the reinitialization, Terraform will ask if you would like to migrate your state back down to
+        normal local state. Once this is complete then Terraform is back to behaving as it does by default.
+
 197. How do you encrypt sensitive data in the state?
-17/01/2022, 23:18 250 Practice Questions For Terraform Associate Certifi cation | by Bhargav Bachina | Bachina Labs | Medium
-https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certifi cation-7a3ccebe6a1a 55/72
-Terraform Cloud
-always encrypts state at rest and protects it with TLS in transit. Terraform Cloud also knows the identity of the user requesting state and maintains a history of state changes. This can be used to control access and track activity.
-Terraform Enterprise
-also supports detailed audit logging.
-The S3 backend supports encryption at rest when the
-encrypt
-option is enabled. IAM policies and logging can be used to identify any invalid access. Requests for the state go over a TLS connection.
+
+        Terraform Cloud always encrypts state at rest and protects it with TLS in transit. Terraform Cloud also
+        knows the identity of the user requesting state and maintains a history of state changes. This can be used
+        to control access and track activity. Terraform Enterprise also supports detailed audit logging.
+        The S3 backend supports encryption at rest when the encrypt option is enabled. IAM policies and logging
+        can be used to identify any invalid access. Requests for the state go over a TLS connection.
+
 198. Backends are completely optional. Is this true?
-Backends are completely optional
-. You can successfully use Terraform without ever having to learn or use backends. However, they do solve pain points that afflict teams at a certain scale. If you're an individual, you can likely get away with never using backends.
+
+        Backends are completely optional. You can successfully use Terraform without ever having to learn or use
+        backends. However, they do solve pain points that afflict teams at a certain scale. If you are an individual,
+        you can likely get away with never using backends.
+
 199. What are the benefits of Backends?
-Working in a team
-: Backends can store their state remotely and protect that state with locks to prevent corruption. Some backends such as Terraform Cloud even automatically store a history of all state revisions.
-Keeping sensitive information off disk
-: State is retrieved from backends on demand and only stored in memory. If you’re using a backend such as Amazon S3, the only location the state ever is persisted is in S3.
-Remote operations
-: For larger infrastructures or certain changes,
-terraform apply
-can take a long, long time. Some backends support remote operations which enable the operation to execute remotely. You can then turn off your computer and your operation will still complete. Paired with remote state storage and locking above, this also helps in team environments.
+
+        Working in a team: Backends can store their state remotely and protect that state with locks to prevent
+                corruption. Some backends such as Terraform Cloud even automatically store a history of all state
+                revisions.
+
+        Keeping sensitive information off disk: State is retrieved from backends on demand and only stored in memory.
+                If you are using a backend such as Amazon S3, the only location the state ever is persisted is in S3.
+
+        Remote operations: For larger infrastructures or certain changes, terraform apply can take a long, long time.
+                Some backends support remote operations which enable the operation to execute remotely. You can then
+                turn off your computer and your operation will still complete. Paired with remote state storage and
+                locking above, this also helps in team environments.
+
 200. Why should you be very careful with the Force unlocking the state?
 Terraform has a
 force-unlock command
