@@ -449,19 +449,9 @@ find / -name “httpd.conf”
 206. Your system crashed and being restarted, but a message appears, indicating that the operating system cannot be found. What is the most likely cause of the problem?
 The /boot file is most likely corrupted
 
-
+---
 [<h3 style="text-align: center;font-family: cursive;"> Next Page </h3>](linux_L1.md)
 
-
-You may also refer to:
-
-* [Linux Interview Questions for Freshers](linux_basic.md)
-* [Linux Interview Questions for Freshers and Experienced - L1](linux_L1.md)
-* [Linux Interview Questions for Experienced Linux Admins - L2](linux_L2.md)
-* [Advanced Linux Interview Questions for Experienced Admins - L3](linux_L3.md)
-* [OS Network Interview Questions](network.md)
-* [AWS interview questions for experienced professionals](aws.md)
-* [DevOps Interview Questions for Freshers and Experienced](devops_interview_questions.md)
-* [DevOps Interview Questions for Freshers and Experienced-2](devops_interview_questions-2.md)
-* [GIT Interview Questions for DevOps Roles](git.md)
-* [Jenkins Interview Questions for Experienced DevOps Engineer](jenkins.md)
+---
+<br>
+{!footer.md!}

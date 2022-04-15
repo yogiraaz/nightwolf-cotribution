@@ -641,3 +641,9 @@ You can add users to an organization by inviting them using their email address.
 Even if your team member has not signed up for Terraform Cloud yet, they can still accept the invitation and create a new account.
 250. The Terraform Cloud Team plan charges you on a per-user basis. Is this true?
 Yes. The Terraform Cloud Team plan is charged on a per-user basis so adding new users to your organization incurs cost.
+
+---
+
+<br>
+<br>
+{!footer.md!}

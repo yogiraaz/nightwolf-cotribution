@@ -1,4 +1,4 @@
-### Top 50 GIT Interview Questions and Answers for DevOps Roles - Solved
+## Top 50 GIT Interview Questions and Answers for DevOps Roles - Solved
 
  We have consolidated a list of frequently asked GIT interview questions for Freshers and Experienced DevOps Engineer.
  You will find these questions very helpful in your interviews for DevOps Engineer. Prepare well and All the very best.
@@ -230,16 +230,5 @@
 [<h3 style="text-align: center;font-family: cursive;"> GIT Cheat Sheet </h3>](git_cheatsheet.md)
 
 ---
-
-You may also refer to:
-
-* [Linux Interview Questions for Freshers](linux_basic.md)
-* [Linux Interview Questions for Freshers-2](linux_interview_questions_for_freshers.md)
-* [Linux Interview Questions for Freshers and Experienced - L1](linux_L1.md)
-* [Linux Interview Questions for Experienced Linux Admins - L2](linux_L2.md)
-* [Advanced Linux Interview Questions for Experienced Admins - L3](linux_L3.md)
-* [OS Network Interview Questions](network.md)
-* [AWS interview questions for experienced professionals](aws.md)
-* [DevOps Interview Questions for Freshers and Experienced](devops_interview_questions.md)
-* [DevOps Interview Questions for Freshers and Experienced-2](devops_interview_questions-2.md)
-* [Jenkins Interview Questions for Experienced DevOps Engineer](jenkins.md)
+<br>
+{!footer.md!}

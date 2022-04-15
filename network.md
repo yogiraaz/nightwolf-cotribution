@@ -180,16 +180,6 @@ A lot more Questions from <a href="https://github.com/v-nightwolf/nightwolf-cotr
         • If one connection is causing a large load, that load is not balanced - persistence keeps it all on
           one node. 
 
-
-You may also refer to:
-
-* [Linux Interview Questions for Freshers](linux_basic.md)
-* [Linux Interview Questions for Freshers-2](linux_interview_questions_for_freshers.md)
-* [Linux Interview Questions for Freshers and Experienced - L1](linux_L1.md)
-* [Linux Interview Questions for Experienced Linux Admins - L2](linux_L2.md)
-* [Advanced Linux Interview Questions for Experienced Admins - L3](linux_L3.md)
-* [AWS interview questions for experienced professionals](aws.md)
-* [DevOps Interview Questions for Freshers and Experienced](devops_interview_questions.md)
-* [DevOps Interview Questions for Freshers and Experienced-2](devops_interview_questions-2.md)
-* [GIT Interview Questions for DevOps Roles](git.md)
-* [Jenkins Interview Questions for Experienced DevOps Engineer](jenkins.md)
+---
+<br>
+{!footer.md!}

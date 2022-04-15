@@ -201,19 +201,9 @@
 
          53. How to troubleshoot high memory usageissue on Linux system.
 
-
+---
 [<h3 style="text-align: center;font-family: cursive;"> Next Page </h3>](linux_L3.md)
 
-
-You may also refer to:
-
-* [Linux Interview Questions for Freshers](linux_basic.md)
-* [Linux Interview Questions for Freshers-2](linux_interview_questions_for_freshers.md)
-* [Linux Interview Questions for Freshers and Experienced - L1](linux_L1.md)
-* [Advanced Linux Interview Questions for Experienced Admins - L3](linux_L3.md)
-* [OS Network Interview Questions](network.md)
-* [AWS interview questions for experienced professionals](aws.md)
-* [DevOps Interview Questions for Freshers and Experienced](devops_interview_questions.md)
-* [DevOps Interview Questions for Freshers and Experienced-2](devops_interview_questions-2.md)
-* [GIT Interview Questions for DevOps Roles](git.md)
-* [Jenkins Interview Questions for Experienced DevOps Engineer](jenkins.md)
+---
+<br>
+{!footer.md!}

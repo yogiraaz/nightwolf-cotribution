@@ -128,16 +128,4 @@ Temporarily store modified, tracked files in order to change branches
 ---
 
 <br>
-
-You may also refer to other articles on this website:
-
-* [Linux Interview Questions for Freshers](linux_basic.md)
-* [Linux Interview Questions for Freshers-2](linux_interview_questions_for_freshers.md)
-* [Linux Interview Questions for Freshers and Experienced - L1](linux_L1.md)
-* [Linux Interview Questions for Experienced Linux Admins - L2](linux_L2.md)
-* [Advanced Linux Interview Questions for Experienced Admins - L3](linux_L3.md)
-* [OS Network Interview Questions](network.md)
-* [AWS interview questions for experienced professionals](aws.md)
-* [DevOps Interview Questions for Freshers and Experienced](devops_interview_questions.md)
-* [DevOps Interview Questions for Freshers and Experienced-2](devops_interview_questions-2.md)
-* [Jenkins Interview Questions for Experienced DevOps Engineer](jenkins.md)
+{!footer.md!}

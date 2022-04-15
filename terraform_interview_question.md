@@ -54,7 +54,7 @@
         Resource Schedulers
         Multi-Cloud Deployment
 
-      Reference: <a href=https://www.terraform.io/intro/use-cases.html >https://www.terraform.io/intro/use-cases.html</a>
+      Reference: <a target="_blank" href=https://www.terraform.io/intro/use-cases.html >https://www.terraform.io/intro/use-cases.html</a>
 
 7. What are the advantages of Terraform?
 
@@ -62,7 +62,7 @@
         State Management
         Operator Confidence
 
-      Reference: <a href=https://learn.hashicorp.com/terraform/getting-started/intro > https://learn.hashicorp.com/terraform/getting-started/intro </a>
+      Reference: <a target="_blank" href=https://learn.hashicorp.com/terraform/getting-started/intro > https://learn.hashicorp.com/terraform/getting-started/intro </a>
 
 8. Where do you describe all the components or your entire datacenter so thatTerraform provision those?
 
@@ -128,7 +128,7 @@
           important for everyone to be working with the same state so that operations will be applied to the same
           remote objects.
 
-      Reference: <a href=https://www.terraform.io/docs/state/purpose.html>https://www.terraform.io/docs/state/purpose.html</a>
+      Reference: <a target="_blank" href=https://www.terraform.io/docs/state/purpose.html>https://www.terraform.io/docs/state/purpose.html</a>
 
 17. What is the name of the terraform state file?
 
@@ -169,7 +169,7 @@
         is responsible for understanding API interactions and exposing resources. Because Terraform can interact
         with any API, you can represent almost any infrastructure type as a resource in Terraform.
 
-      Reference: <a href=https://www.terraform.io/docs/configuration/providers.html> https://www.terraform.io/docs/configuration/providers.html</a>
+      Reference: <a target="_blank" href=https://www.terraform.io/docs/configuration/providers.html> https://www.terraform.io/docs/configuration/providers.html</a>
 
 23. How do you configure a Provider?
 
@@ -602,9 +602,9 @@
 
       References: 
 
-      <a href=https://www.terraform.io/docs/provisioners/#passing-data-into-virtual-machines-and-other-compute-resources>https://www.terraform.io/docs/provisioners/#passing-data-into-virtual-machines-and-other-compute-resources</a>
+      <a target="_blank" href=https://www.terraform.io/docs/provisioners/#passing-data-into-virtual-machines-and-other-compute-resources>https://www.terraform.io/docs/provisioners/#passing-data-into-virtual-machines-and-other-compute-resources</a>
 
-      <a href=https://www.terraform.io/docs/provisioners/#running-configuration-management-software>https://www.terraform.io/docs/provisioners/#running-configuration-management-software</a>
+      <a target="_blank" href=https://www.terraform.io/docs/provisioners/#running-configuration-management-software>https://www.terraform.io/docs/provisioners/#running-configuration-management-software</a>
 
 72. Expressions in provisioner blocks cannot refer to their parent resource by name.Is this true?
 
@@ -653,18 +653,13 @@
 
         terraform taint <resource.id>
 
+---
+
 [<h3 style="text-align: center;font-family: cursive;"> Next Page </h3>](terraform_interview_question-2.md)
 
-You may also refer to:
+---
 
-* [Linux Interview Questions for Freshers](linux_basic.md)
-* [Linux Interview Questions for Freshers-2](linux_interview_questions_for_freshers.md)
-* [Linux Interview Questions for Freshers and Experienced - L1](linux_L1.md)
-* [Linux Interview Questions for Experienced Linux Admins - L2](linux_L2.md)
-* [Advanced Linux Interview Questions for Experienced Admins - L3](linux_L3.md)
-* [OS Network Interview Questions](network.md)
-* [AWS interview questions for experienced professionals](aws.md)
-* [DevOps Interview Questions for Freshers and Experienced](devops_interview_questions.md)
-* [DevOps Interview Questions for Freshers and Experienced-2](devops_interview_questions-2.md)
-* [GIT Interview Questions for DevOps Roles](git.md)
-* [Jenkins Interview Questions for Experienced DevOps Engineer](jenkins.md)
+<br>
+<br>
+
+{!footer.md!}

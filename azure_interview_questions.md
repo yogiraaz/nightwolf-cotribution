@@ -2361,3 +2361,9 @@
         Scenario: Users in the Miami office must use Azure Active Directory Seamless Single Sign-on (Azure AD Seamless SSO) when accessing resources in Azure.
         Planned Azure AD Infrastructure include: The on-premises Active Directory domain will be synchronized to Azure AD.
         References: https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start
+
+<br>
+<br>
+<br>
+<br>
+{!footer.md!}
