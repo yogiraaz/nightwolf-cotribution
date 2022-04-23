@@ -1,4 +1,4 @@
-# Top 250 Questions and Answers For Terraform Associate Certification - 2
+# Top 250 Questions and Answers For Terraform Associate Certification - 3
 ---
 
  We have consolidated a list of frequently asked questions in Terraform AssociateCertification. Same list consists of frequently asked Terraform interview questions. This will help DevOps Engineers in their preparations for Interview.
