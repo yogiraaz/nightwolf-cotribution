@@ -8,85 +8,86 @@ These are AWS interview questions for experienced professionals.  You will find 
 ---
 
 
-Q126. How many Elastic IP address can be associated with a single
-account?
-4
-10
-5
-None the above
-Ans: 5
-Q127. What is the name to the additional network interfaces that can be
-created and attached to any Amazon EC2 instance in your VPC?
-Elastic IP
-Elastic Network Interface
-AWS Elastic Interface
-AWS Network ACL
-Ans: Elastic Network Interface
-Q128. You have configured ELB with three instances connected to that. If
-your instances are unhealthy or terminated, the traffic should be
-automatically replaced to another instance, what type of service can be
-used to achieve this requirement?
-Sticky session
-Fault Tolerance
-Connection drainage
-Monitoring
-Ans: Fault Tolerance
-Q129. After configuring ELB, you need to ensure that the user requests
-are always attached to a single instance. What setting can you use?
-Session cookie
-Cross one load balancing
-Connection drainage
-Sticky session
-Ans: Sticky session
-Q130. Which of the following metrics cannot have a cloud watch alarm?
-EC2 instance status check failed
-EC2 CPU utilization
-RRS lost object
-Auto scaling group CPU utilization
-Ans: RRS lost object
-Q131. Which of the below mentioned service is provided by Cloud watch?
-Monitor estimated AWS usage
-Monitor EC2 log files
-Monitor S3 storage
-Monitor AWS calls using Cloud trail
-Ans: Monitor estimated AWS usage
-Q132. A user has Launched an EC2 instance which of the below
-mentioned statements is not true respect to instance addressing?
-The private IP addresses are not reachable from the internet
-The user can communicate using the private IP across regions
-The private IP address and pubic IP address for an instance are directly mapped to each
-other using NAT
-The private IP address for the instance is assigned using DHCP
-Ans: The user can communicate using the private IP across regions
-Q133. Which of the following service provides the edge – storage or
-content delivery system that caches data at different locations?
-Amazon RDS
-Simple DB
-Amazon Cloud Front
-Amazon associates web services
-Ans: Amazon Cloud Front
-Q134. A user is launching an instance under the free usage tier from the
-AMI with a snapshot size of 50 GB. How can the user launch the instance
-under the free usage tier?
-Launch a micro instance
-Launch a micro instance, but in the EBS configuration modify the size of EBS to 50 GB.
-Launch a micro instance, but do not store the data of more than 30 GB on the EBS storage.
-It is not possible to have this instance under the free usage tier
-Ans: It is not possible to have this instance under the free usage tier
-Q135. What are the possible connection issues you can face while
-connecting to your instance?
-Connection timed out
-Server refused our key
-No supported authentication methods available
-All of the above
-Ans: All of the above
-Q136. You are enabled sticky session with ELB. What does it do with your
-instance?
-Routes all the requests to a single DNS
-Binds the user session with a specific instance
-Binds the user IP with a specific session
-Provides a single ELB DNS for each IP address
-Ans: Binds the user session with a specific instance
+1. How many Elastic IP address can be associated with a single account?
+
+        Ans: 5
+
+2. What is the name to the additional network interfaces that can be created and attached to any Amazon EC2 instance in your VPC?
+
+        Ans: Elastic Network Interface
+
+3. You have configured ELB with three instances connected to that. If your instances are unhealthy or terminated, the traffic should be
+automatically replaced to another instance, what type of service can be used to achieve this requirement?
+
+        Ans: Fault Tolerance
+
+4. After configuring ELB, you need to ensure that the user requests are always attached to a single instance. What setting can you use?
+
+        Ans: Sticky session
+
+5.  Which of the following metrics cannot have a cloud watch alarm?
+
+      - EC2 instance status check failed
+      - EC2 CPU utilization
+      - RRS lost object
+      - Auto scaling group CPU utilization
+
+              Ans: RRS lost object
+
+6. Which of the below mentioned service is provided by Cloud watch?
+
+      - Monitor estimated AWS usage
+      - Monitor EC2 log files
+      - Monitor S3 storage
+      - Monitor AWS calls using Cloud trail
+
+            Ans: Monitor estimated AWS usage
+
+7. A user has Launched an EC2 instance which of the below mentioned statements is not true respect to instance addressing?
+
+      - The private IP addresses are not reachable from the internet
+      - The user can communicate using the private IP across regions
+      - The private IP address and pubic IP address for an instance are directly mapped to each other using NAT
+      - The private IP address for the instance is assigned using DHCP
+
+            Ans: The user can communicate using the private IP across regions
+
+8. Which of the following service provides the edge – storage or content delivery system that caches data at different locations?
+
+      - Amazon RDS
+      - Simple DB
+      - Amazon Cloud Front
+      - Amazon associates web services
+
+            Ans: Amazon Cloud Front
+
+9. A user is launching an instance under the free usage tier from the AMI with a snapshot size of 50 GB. How can the user launch the instance under the free usage tier?
+
+      - Launch a micro instance
+      - Launch a micro instance, but in the EBS configuration modify the size of EBS to 50 GB.
+      - Launch a micro instance, but do not store the data of more than 30 GB on the EBS storage.
+      - It is not possible to have this instance under the free usage tier
+
+            Ans: It is not possible to have this instance under the free usage tier
+
+10. What are the possible connection issues you can face while connecting to your instance?
+
+      - Connection timed out
+      - Server refused our key
+      - No supported authentication methods available
+      - All of the above
+
+            Ans:  All of the above
+
+11. You are enabled sticky session with ELB. What does it do with your instance?
+
+      - Routes all the requests to a single DNS
+      - Binds the user session with a specific instance
+      - Binds the user IP with a specific session
+      - Provides a single ELB DNS for each IP address
+
+            Ans: Binds the user session with a specific instance
+
 Q137. Which is a main email platform that provides an easy, cost effective
 way for you to send compliance and receive a response using your own
 email address and domains?

@@ -359,6 +359,41 @@
           - Finally, the command docker-compose stop also stops the services in the order of the dependency specified.
             For the given example, the backend service is stopped before the DB service.
 
+36. What is docker architecture?
+
+37. What is docker lifecycle ?
+
+38. What is dockerfile and docker compose file ?
+
+39. Explain various layers in a dockerfile
+
+40. What is docker newtworking and tell various types of network in docker
+
+41. What is default network in docker
+
+42. How one containetr talks with other container ?
+
+43. How to debug the container ?
+
+44. What is docker swarm ?
+
+45. Tell some commands in docker.
+
+46. What is difference between ADD/COPY , CMD/ENTRYPOINT,RUN/CMD ?
+
+47. Tell the docker file best practices ?
+
+48. How to reduvce a docker file size ?
+
+49. How to store the docker file in jfrog/dockerhub ?
+
+50. How to create a docker image if no internet connectivity is there ?
+
+51. Write a docker file and state various layers and use the depends_on concept.
+
+52. How to save a container as image and then as a zip file ?
+
+53. What are docker volumes ?
 
 <br>
 <br>
