@@ -2,7 +2,7 @@
 
 
 ---
-  We have prepared a set of frequently asked Java interview questions to help Freshers and Experienced Java developers in their preparations for Interview.
+  We have prepared a set of frequently asked Core Java interview questions to help Freshers and Experienced Java developers in their preparations for Interview.
 
   You will find these questions very helpful in your Java/OOPs interviews. Prepare well and All the very best.
 <br>
