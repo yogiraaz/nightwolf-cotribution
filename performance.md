@@ -14,6 +14,8 @@ Usually System Performance issues can be identified by observing slowness in ser
 
 We will try to break your investigation steps into major bullet points and helps you to find the root causes of the issue. 
 
+ {!inpage-ads.md!}
+
 ## Tools helpful in your investigation: 
 
 Below listed tools are Linux performance monitoring tools, which will help you find out the root cause of the issue,
@@ -86,6 +88,8 @@ The output of above script will look like this:
 	Total CPU % for /opt/mongodb/mms/jdk/bin/mms-app =  4.8
 
 	############################################
+
+ {!horizontal-ads.md!}
 
 ## Troubleshooting Linux perfomance isssue happening due to high CPU Usage
 
@@ -190,12 +194,14 @@ The output of above script will look like this:
         buff/cache: Size of memory utilized by system for kernel buffers(i.e. buff) and page cache and slabs(i.e. cache)
 
 
+{!horizontal-ads.md!}
 
 ## Troubleshooting Linux performance issue happening due to high Disk IO Usage
 
 ## Troubleshooting Linux OS network performance Issues
 
 
+{!multiplex-ads.md!}
 
 ---
 

@@ -11,6 +11,9 @@
  
 ---
 
+ {!inpage-ads.md!}
+
+
 1. Explain the below error: 
 
                 -------------------------------------------------------------------------------------------
@@ -25,6 +28,7 @@
                 [<f7fdb1d6>] ? rpc_malloc+0x36/0x90 [sunrpc]
                 [<f7fdb2f0>] ? rpc_wait_bit_killable+0x0/0x80 [sunrpc] 
                 -------------------------------------------------------------------------------------------
+ ---
 
          Hint =>
             Above error is kernel dump due to kmalloc buffer exhaustion. The system is out of memory and cannot 
@@ -326,6 +330,9 @@
 75. When we execute below command, which binary is used ?
 
           [ -f test ] && echo "Found the file" || echo "create new file"
+
+{!horizontal-ads.md!}
+
 ---
 [<h1 style="text-align: center;font-family: cursive;"> Next Page </h1>](network.md)
 
