@@ -11,6 +11,8 @@
 
 ---
 
+ {!inpage-ads.md!}
+
 51. Give an example of use of Pointers in Java class.
 
         Ans: There are no pointers in Java. So we can't use concept of pointers in Java. 

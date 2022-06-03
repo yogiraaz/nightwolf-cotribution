@@ -2,6 +2,7 @@
 `General questions about basic Networking + OS Networking + Troubleshooting.
 `	
 
+ {!inpage-ads.md!}
 
 	1.  How to check if you are receiving connection timeouts when trying to connect to a server. 
 
@@ -53,6 +54,8 @@
 		www.google.com. 
 
 	20. What is the DORA process ? 
+
+{!horizontal-ads.md!}
 	
 	21. TCP 3 way handshaking and 4 way termination? 
 	
@@ -88,6 +91,7 @@
 	
 	36. Please explain a recent issue that you experienced in your environment and your learning associated with it. 
 
+{!horizontal-ads.md!}
 
 ##Questions from Github
 A lot more Questions from <a href="https://github.com/v-nightwolf/nightwolf-cotribution/blob/main/network.md" target="_blank">nightwolf-cotribution github repo</a>
@@ -158,6 +162,8 @@ A lot more Questions from <a href="https://github.com/v-nightwolf/nightwolf-cotr
             the firewall.
         b). Edit /etc/hosts on the all servers behind the firewall to override DNS to point to private IP.
         c). The "best" fix would be to enable DNS doctoring/translation at the firewall.
+
+{!horizontal-ads.md!}
 
     25. What are the pros/cons of Load Balancer Health checks?
        

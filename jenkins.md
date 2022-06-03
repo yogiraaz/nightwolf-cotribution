@@ -5,6 +5,8 @@
 
  All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
 
+ {!inpage-ads.md!}
+
 ---
 
    Q#1) What is Jenkins?
@@ -242,6 +244,8 @@
          2. All code changes are reflected successfully.
          3. Checking for repository synchronization to make sure that all the differences and changes related to
             config and other settings are saved in the repository.
+
+{!horizontal-ads.md!}
 
    Q#21) What is the difference between Maven, Ant, and Jenkins?
 

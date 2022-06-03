@@ -8,6 +8,8 @@
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
 
+ {!inpage-ads.md!}
+
 ---
 
     	1. What did you learn yesterday/this week?
@@ -119,6 +121,8 @@
 			b) To redirect the standard error (stderr): 2> /dev/null
 			c) To redirect the standard output(stdout): 1> /dev/null
 
+ {!inpage-ads.md!}
+
     	27. What is the difference between UNIX and Linux.
 
     	28. What is the difference between Telnet and SSH?
@@ -185,6 +189,8 @@
     	49. How to force/trigger a file system check on next reboot?
 
     	50. What is SNMP and what is it used for?
+
+ {!inpage-ads.md!}
 
     	51. What is a runlevel and how to get the current runlevel?
 
@@ -274,6 +280,9 @@
 
 ---
 [<h3 style="text-align: center;font-family: cursive;"> Next Page </h3>](linux_L2.md)
+
+
+ {!inpage-ads.md!}
 
 ---
 <br>

@@ -11,6 +11,8 @@
 
 ---
 
+ {!inpage-ads.md!}
+
 1. What is the difference between an Inner Class and a Sub-Class?
 
         Ans: An Inner class isa class which is nested within another class. An Inner class has access rights for

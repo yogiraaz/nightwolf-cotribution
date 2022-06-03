@@ -6,6 +6,8 @@ These are AWS interview questions for experienced professionals.  You will find 
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
 
+ {!inpage-ads.md!}
+
 ---
    QUESTION NO: 1
 
@@ -452,6 +454,8 @@ These are AWS interview questions for experienced professionals.  You will find 
 
        Answer: A,D
 
+ {!inpage-ads.md!}
+
    QUESTION NO: 26
 
        You are designing a system that has a Bastion host. This component needs to be highly available
@@ -868,6 +872,8 @@ These are AWS interview questions for experienced professionals.  You will find 
 
        Reference:
        http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html
+
+ {!inpage-ads.md!}
 
    QUESTION NO: 51
 
@@ -1407,6 +1413,8 @@ These are AWS interview questions for experienced professionals.  You will find 
        which can notify the user as well generate logs for each API calls The health check is
        internally performed by ELB and does not help the admin get the ELB activity.
 
+ {!inpage-ads.md!}
+
    QUESTION NO: 76
 
        A user is planning to use AWS Cloudformation. Which of the below mentioned functionalities does
@@ -1911,6 +1919,8 @@ These are AWS interview questions for experienced professionals.  You will find 
        Amazon RDS uses the Amazon Simple Notification Service to provide a notification when an
        Amazon RDS event occurs. Event categories for a snapshot source type include: Creation,
        Deletion, and Restoration. The Backup is a part of DB instance source type.
+
+ {!inpage-ads.md!}
 
    QUESTION NO: 101
 
@@ -2417,6 +2427,8 @@ These are AWS interview questions for experienced professionals.  You will find 
        can provide data with a specific date and time. The console also provides the option to search using
        the local timezone under the time range caption in the console because the time range tab allows
        the user to change the time zone.
+
+ {!inpage-ads.md!}
 
    QUESTION NO: 125
 

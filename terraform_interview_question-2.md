@@ -7,6 +7,8 @@
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
 
+ {!inpage-ads.md!}
+
 ---
 
 80. What is command fmt?

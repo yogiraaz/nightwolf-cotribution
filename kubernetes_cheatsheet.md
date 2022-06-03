@@ -2,6 +2,8 @@
 
 This article consists a list of kubectl commands which are helpful for your day to day job. 
 
+ {!inpage-ads.md!}
+
 ---
 ## Creating Objects
 

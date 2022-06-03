@@ -9,6 +9,7 @@
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
    
+ {!inpage-ads.md!}
 
 ---
 
@@ -152,6 +153,7 @@
              openssh-server-6.6p1-1.el6.x86_64 ?
 
 
+ {!inpage-ads.md!}
 
          35. Describe briefly the steps you need to take in order to create and install a valid certificate for the
              site https://www.nightwolf.in.
@@ -203,6 +205,8 @@
 
 ---
 [<h3 style="text-align: center;font-family: cursive;"> Next Page </h3>](linux_L3.md)
+
+{!horizontal-ads.md!}
 
 ---
 <br>

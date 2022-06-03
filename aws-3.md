@@ -5,6 +5,8 @@ These are AWS interview questions for experienced professionals.  You will find 
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
 
+ {!inpage-ads.md!}
+
 ---
 
 1. List the components required to build Amazon VPC?

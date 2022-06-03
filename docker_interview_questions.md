@@ -7,6 +7,9 @@
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
 
+---
+
+ {!inpage-ads.md!}
 
 ## Docker Basic Interview Questions
 ---
@@ -118,6 +121,8 @@
         - The command used to get all version information of the client and server is the "docker version".
         - To get only the server version details, we can run:
            # docker version --format '{{.Server.Version}}'
+
+ {!inpage-ads.md!}
 
 ## Docker Intermediate Interview Questions
 
@@ -294,6 +299,7 @@
  
         - As part of good practices, every DockerFile should have at least one of these two commands. 
 
+ {!inpage-ads.md!}
 
 ## Docker Advanced Interview Questions
 

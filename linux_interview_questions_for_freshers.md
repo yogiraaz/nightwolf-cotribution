@@ -8,16 +8,14 @@
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome. 
 
+ {!inpage-ads.md!}
+
 ---
 
 1. When you login you get “$” prompt, what is the prompt for root?
-#
 2. Explain the difference between grep and egrep?
-Search online
-3. What is the port # for DNS, NTP and NFS?
-53,123 and 111/2049
-4. What is the configuration file name of DNS and where is it located?
-/etc/named.conf
+3. What is the port for DNS, NTP and NFS? 53,123 and 111/2049
+4. What is the configuration file name of DNS and where is it located? /etc/named.conf
 5. How many new directories will be created after running the following command
 mkdir {a..c}{1..3}
 9
@@ -109,6 +107,9 @@ sshd
 Search online
 49. List any 3 IT components?
 Hardware, OS and Applications
+
+ {!inpage-ads.md!}
+
 50. Which directory has all the commands we use, e.g. ls, cd etc.?
 /usr/bin or /bin
 51. What is the difference between memory, virtual memory and cache?
@@ -166,6 +167,9 @@ rm filename and rmdir dirname
 None
 75. List 4 commands to display or read a file contents?
 cat, more, less, vi
+
+{!horizontal-ads.md!}
+
 76. Which command is used to read the top 5 lines of a file?
 head -5 filename
 77. What are the different commands or methods to write to a file?
@@ -274,6 +278,9 @@ rpm –e packagename
 /etc/shadow
 125. Which command you would use to find the location of chmod command?
 which chmod
+
+ {!inpage-ads.md!}
+
 126. Which command is used to check if the other computer is online?
 ping othercomputer
 127. Please explain about LAN, MAN and WAN?
@@ -334,6 +341,9 @@ Shift ZZ or :wq!
 Search online
 150. What is the process or daemon name for NTP?
 ntpd
+
+ {!inpage-ads.md!}
+
 151. What are a few commands you would run if your system is running slow?
 top, iostat, df –h, netstat etc.
 152. How to install a package in Redhat Linux?

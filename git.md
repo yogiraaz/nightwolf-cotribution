@@ -5,7 +5,8 @@
 <br>
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
- 
+
+ {!inpage-ads.md!}
 
 ---
        
@@ -131,6 +132,8 @@
        The Feature branch implies a unique branch for every new feature. The feature branch could be pushed to
        the development branch just like their parent branch.
 
+ {!inpage-ads.md!}
+
    Q25) What is the syntax for rebasing ?
 
         # git rebase [new-commit]
@@ -156,7 +159,7 @@
    Q30) What is the max number of heads can be used in git?
 
         unlimited
-       
+
    Q31) How many characters are used in sha1 name
 
         40 chars

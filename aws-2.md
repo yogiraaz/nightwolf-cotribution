@@ -6,6 +6,8 @@ These are AWS interview questions for experienced professionals.  You will find 
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
 
+ {!inpage-ads.md!}
+
 ---
 
    QUESTION NO: 151
@@ -518,6 +520,8 @@ These are AWS interview questions for experienced professionals.  You will find 
        results of the Amazon EC2 instance status checks. If the instance status description shows any
        other state other than “running” or the system status description shows impaired, Auto Scaling
        considers the instance to be unhealthy. Thus, it terminates the instance and launches a replacement.
+
+ {!inpage-ads.md!}
 
    QUESTION NO: 176
 
@@ -1149,6 +1153,8 @@ These are AWS interview questions for experienced professionals.  You will find 
        connect to an instance, he needs an internet gateway. The internet gateway should be configured
        with the route table to allow traffic from the internet.
 
+ {!inpage-ads.md!}
+
    QUESTION NO: 201
 
        A user is trying to setup a security policy for ELB. The user wants ELB to meet the cipher
@@ -1670,6 +1676,8 @@ These are AWS interview questions for experienced professionals.  You will find 
        points to CloudWatch every five minutes, while in detailed monitoring a service sends data points
        to CloudWatch every minute. The AWS SNS service sends data every 5 minutes. Thus, it supports
        only the basic monitoring. The user cannot enable detailed monitoring with SNS.
+
+{!horizontal-ads.md!}
 
    QUESTION NO: 226
 
@@ -2213,6 +2221,8 @@ These are AWS interview questions for experienced professionals.  You will find 
        launched it will have a network interface attached with it. The user cannot delete the subnet until
        he terminates the instance and deletes the network interface. When the user terminates the
        instance all the network interfaces attached with it are also deleted.
+
+ {!inpage-ads.md!}
 
    QUESTION NO: 251
 
@@ -2799,6 +2809,8 @@ These are AWS interview questions for experienced professionals.  You will find 
        ]
        }
 
+{!horizontal-ads.md!}
+
    QUESTION NO: 276
 
        A user has configured an HTTPS listener on an ELB. The user has not configured any security
@@ -3335,6 +3347,8 @@ These are AWS interview questions for experienced professionals.  You will find 
        what should be done when he initiates shutdown from the OS using Instance initiated shutdown
        behaviour. If the instance initiated behaviour is set to terminate and the user shuts off the OS
        even though termination protection is enabled, it will still terminate the instance.
+
+ {!inpage-ads.md!}
 
    QUESTION NO: 301
 

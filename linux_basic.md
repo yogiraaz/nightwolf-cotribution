@@ -8,6 +8,8 @@
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome. 
 
+ {!inpage-ads.md!}
+
 ---
 
        1.What is two types of Linux User Mode ?
@@ -200,6 +202,8 @@
 
        50. What is Kernel un Unix Operating system?
            Kernel is the heart of operating system. It interacts with shell and executes the machine level language.
+
+ {!inpage-ads.md!}
 
        51. How can I save my input and output commands and see them when required?
            At the beginning of the session if you use 'script' command then the details of the input and output
@@ -408,6 +412,8 @@
             And to disable it:
                #chattr -i filename
 
+{!horizontal-ads.md!}
+
        101. How do you list the kerenel modules which is already loaded ?
            List Currently Loaded Modules – lsmod
            List Available Kernel Modules – modprobe -l
@@ -612,6 +618,8 @@
            Delete the corresponding entry
             # hash -d myprint
 
+{!horizontal-ads.md!}
+
        126. Following the program will not affected by this shell /sbin/nologin?
             FTP clients
             mail clients
@@ -769,6 +777,8 @@
             nightwolf:!$33341$HEWdPIJ.$qX/RbB.TPGcyerAVDlF4g.:12830:0:99999:7:::
             you will see a ! added before the encrypted password in /etc/shadow file, means password disabled.
 
+{!horizontal-ads.md!}
+
        151. Unlock User Account
             # usermod -U nightwolf
               nightwolf:$33341$HEWdPIJ.$qX/RbB.TPGcyerAVDlF4g.:12830:0:99999:7:::
@@ -925,6 +935,8 @@
        175. Find SUID Files?
             # find / -perm /u=s
 
+ {!inpage-ads.md!}
+
        176. Find SGID Files?
             # find / -perm /g=s
 
@@ -1020,6 +1032,8 @@
             This is the e-mail address that the server includes in error messages sent to the client.
             Defines the e-mail address that is shown when the server generates an error page.
             The e-mail address that the Web server provides to clients in case any errors occur.
+
+{!horizontal-ads.md!}
 
        201. What is the use of SCP command in Linux?
             SCP command stands for secure copy. It is used to copy/download data from one machine to another machine.
@@ -1159,6 +1173,8 @@
             0 – Standard Input
             1- Standard Output
             2-Standard Error
+
+ {!inpage-ads.md!}
 
        242. How do you set a mask to stop certain permissions from being granted by default on file creation?
               # umask <value>
