@@ -196,6 +196,8 @@ The output of above script will look like this:
 
 {!horizontal-ads.md!}
 
+## Swap Memory
+
 ## Troubleshooting Linux performance issue happening due to high Disk IO Usage
 
 ## Troubleshooting Linux OS network performance Issues
