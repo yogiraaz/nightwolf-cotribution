@@ -20,7 +20,7 @@
          touch
 
        3.What is INODE and How to Identify?
-         Its unique identification code for files and directories, its was generate automatically while create 
+         Its unique identification code for files and directories, it was generate automatically while creating
          new file and directories
              ls -i filename
              ls -ldi directoryname

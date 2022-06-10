@@ -1,4 +1,4 @@
-## Linux System Performance Troubleshooting 
+# Linux System Performance Troubleshooting 
 * `Definition: `
   System performance is a measure of the amount of useful work done by a System in a time range. 
 
@@ -14,9 +14,7 @@ Usually System Performance issues can be identified by observing slowness in ser
 
 We will try to break your investigation steps into major bullet points and helps you to find the root causes of the issue. 
 
- {!inpage-ads.md!}
-
-## Tools helpful in your investigation: 
+# Tools helpful in your investigation: 
 
 Below listed tools are Linux performance monitoring tools, which will help you find out the root cause of the issue,
 
@@ -47,6 +45,9 @@ You can install these tools  very easily using below command:
 `      yum install -y  lsof sysstat iptraf tcpdump procps-ng net-tools strace iotop ethtool blktrace       `
 
 <br>
+
+ {!inpage-ads.md!}
+
 
 #### You can start your investigation by executing small script, which will gather a lot of system stats for you:
 	
@@ -91,7 +92,7 @@ The output of above script will look like this:
 
  {!horizontal-ads.md!}
 
-## Troubleshooting Linux perfomance isssue happening due to high CPU Usage
+# Troubleshooting Linux perfomance isssue happening due to high CPU Usage
 
    Every performance issue troubleshooting should starts with `top` command:
 
@@ -102,18 +103,18 @@ The output of above script will look like this:
    	%Cpu(s):  3.2 us,  0.0 sy,  0.0 ni, 96.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
    	KiB Mem :  2889532 total,    73328 free,  2707940 used,   108264 buff/cache
    	KiB Swap:  2097148 total,  1206268 free,   890880 used.    48052 avail Mem 
-<br>
+---
 
     a). 1st line contains: UPTIME and LOAD Averages
            current time and length of time since last boot
            total number of users logged in.
            system load avg over the last 1, 5 and 15 minutes
-<br>
+---
 
     b). 2nd line contains: TASKs
         This line shows total tasks or threads, depending on the state of the Threads-mode toggle.  
         That total is further classified as: running; sleeping; stopped; zombie
-<br>
+---
 
     c). 3rd line contains CPU state percentages: This will guide your investigation into a specific direction. 
 
@@ -126,7 +127,8 @@ The output of above script will look like this:
            hi : time spent servicing hardware interrupts
            si : time spent servicing software interrupts
            st : time stolen from this vm by the hypervisor
-<br>
+---
+
     Above stats might guide your investigation into a specific direction. Depending on above CPU stats, you will be able to decide what to check next. 
 	
 	* If only "%us"(time running un-niced user processes) is high that means your application is consuming more
@@ -174,7 +176,11 @@ The output of above script will look like this:
     6. Go to /proc/{$PID_OF_PROCESS}/
 <br>
 
-## Troubleshooting Linux performance issue happening due to high Memory Usage
+{!horizontal-ads.md!}
+
+<br>
+
+# Troubleshooting Linux performance issue happening due to high Memory Usage
 
     d). 4th and 5th line in 'top' output contains Memory stats in Kibibytes(kib).
         There is slight difference between kilibyte and kibibyte i.e 1 kB = 1000 bytes. 1 KiB = 1024 bytes.
@@ -193,189 +199,219 @@ The output of above script will look like this:
 
         buff/cache: Size of memory utilized by system for kernel buffers(i.e. buff) and page cache and slabs(i.e. cache)
 
-
-{!horizontal-ads.md!}
-
-
-In case "used"  RAM is 100% then we need to check we need to check which application is consuming that. 
-
-Further, we can check application name in TOP command 
-
-Run "top" then press SHIFT+m to sort w.r.t to Memory utilization 
-
-It will show process taking memory utilization, if that process is taking much memory utilization then we need to act accordingly.  
-
-# OS process: 
-if that is worthy then we need to tune OS parameters otherwise there can process which was running from long time and taking much resource, we can simply kill them. 
-
-# Application process:
-if that process is worthy then this can be a issue with code within the application 
-
-Further we can tune that application as well by allowing specific RAM to that particular process/app with the help of cgroups. 
-
-# Configure the memory limit to 1000M:  
-
-sudo systemctl set-property .service MemoryLimit=1000M  
-
-# View memory limit configuration: 
-
- cat /etc/systemd/system.control/.service.d/50-MemoryLimit.conf  
-
-# Configure memory limit to 1000M using a unit file:  
-
-sudo vi /etc/systemd/system/.service -- Add the following entry under the [Service] section MemoryLimit=1000M 
-
------------------------------------------------------------------------------------------------------------------- 
+{!inpage-ads.md!}
 
 ### High memory utilization 
 
-Excessive memory use on the system can lead to poor performance due to the system's need to move data between the RAM memory and swap storage, memory must be cleared to make room for new allocations, or there is little space available for caching data from the file system. A quick summary of the memory being used on the system can be obtained with the free command. Below is sample output from the free command. 
+      Excessive memory use on the system can lead to poor performance due to systems need to move data between
+      the RAM memory and swap storage, memory must be cleared to make room for new allocations, or there is little
+      space available for caching data from the file system. Below is sample output from free command. 
 
-$ free 
-             total       used       free     shared    buffers     cached 
-Mem:      15998332   14522616    1475716          0     918548    3673008 
--/+ buffers/cache:    9931060    6067272 
-Swap:      5734396     219564    5514832 
+
+        # free
+                         total        used        free      shared  buff/cache   available
+          Mem:        32877556     3236036    20996296       11316     8645224    29120756
+          Swap:        1953788        5888     1947900
+
+
+        1. Total Mem: Total amount of memory allocated to the server.
+        2. Used Mem: Total amount of memory currently being utilized by system and applications.
+        3. Free Mem: Memory amount currently free on system.
+        4. Shared Mem: Amount of memory  used by tmpfs and  shared memory betweendifferent processes. 
+        5. buff/cache Mem: Memory used by OS buffer and caching, which is dropped by OS when new memory request comes. 
+        6. Available Mem: Free Mem + buff/cahce Mem.
+
+      Linux support virtual memory, which allows applications to use more memory than physical RAM installed on
+      the machine. Linux will use the swap partitions to store the data that is not currently being used and
+      automatically move data between RAM memory and disk drives as required. However, it is very slow to move
+      data between physical RAM and disk. 
+
+##### what is Swap? 
+
+      The primary function of Swap space is to utilize disk space from a separate, dedicated partition on the main
+      storage for RAM when the physical main memory fills up and more space is needed. 
+
+##### What is vm.swappiness 
+
+      vm.swappiness is a value which helps OS to decide when to start using swap. The default value of vm.swappiness
+      is 60. vm.swappiness represents the percentage of the free memory before activating swap. The lower the value
+      of vm.swappiness, the less swapping is used and the more memory pages are kept in physical memory.
+
+      In simpler words, the value of /proc/sys/vm/swappiness dictates how 'aggressively' the Linux kernel will swap
+      memory pages [during memory reclaim].
+
+      The 'swappiness' value can be between 0 and 100.
+
+      For high Memory centric applications like Databases, Please try to keep the vm.swappiness as low as possible,
+      somewhere between 5 to 10.
+
+      A value of 0 does not prevent swap. In fact, the kernel will initiate swap when the amount of free and
+      file-backed pages is less than the high water mark in a zone irrespective of the swappiness value.
+
+      If no swap area(s) exists then swappiness is not applicable.
+
+
+
+{!inpage-ads.md!}
+
+
+### Main Memory Architecture: 
+
+     - To expand on main memory, Memory is divided into small-small chunks of memory called Memory Pages. The default
+       size of memory pages on most processors is 4KB, and although some processors use 8KB, 16KB, or 64KB as the
+       default page size. 
+
+        =>  Fixed size block in RAM (Physical Address Space)  -  Frame
+        =>  Fixed size block created by CPU (Logical Address Space) - Page
+
+     - Main memory is divided by two general categories: Page Cache, where the kernel stores page-sized chunks of
+       files for faster loading; and Anonymous Memory, which is mainly comprised from content not backed by storage,
+       such as program stack and temporary variables. 
+
+     - The kernel uses a memory management program that detects blocks (AKA: pages) of anonymous memory, in which
+       the contents have not been used recently. The memory management program swaps out enough of these relatively
+       infrequently used pages of anonymous memory to a special partition on the main storage specifically designated
+       for paging or swapping. This frees up RAM and makes room for more data. 
+
+     - Those pages of anonymous memory that were swapped out to the Swap partition are tracked by the kernel memory
+       management code and can be paged back into RAM if they are needed (AKA: Swapped-in). 
+
+      =>  PAGE TABLE: A table that has mapping of addresses in RAM of pages and a validation bit which tells either
+          the page is present on that address or not.
+
+### Linux memory management: 
+
+     - When a process in Memory tries to access a file, the Memory Management program check if that File already
+       exists in Memory and what memory pages are mapped to the requested file. For Page faults are raised. 
+
+##### What are Page Faults: 
+       
+        It is a condition when a process in execution can not find memory pages for a file in Virtual memory space. 
+
+##### What are Major page faults ?
+
+       * If page mapping for requested file is not found in Virtual Memory space, a "Major page Fault" is raised.
+         This means requested file needs to be bring into memory from either disk or Swap. Bringing file to memory
+         from Disk or Swap is costs heavy penalty in terms of cpu cycles occurred due to swap-in, swap-out.
+
+          => "SWAP-IN":  It is a mthod of moving a file/pages from Swap to main Memory.
+          => "SWAP-OUT": It is a method of moving file/pages from Memory to Swap. 
+
+        Major page faults, Swap-IN and Swap-OUT are cpu cycle costly processes. If there is high swap-in and swap-out
+        happening on a server/machine, which clearly means OS is mostly busy in just moving the files/pages around
+        instead of actually serving the actual proccesses. This will degrade the system performance. 
+
+##### What are Minor page faults ?
+
+       * If requested file page mapping is found in Virtual memory, but pages are mapped/used by some other process,
+         a "Minor page fault" will be raised. Linux OS then will mark those pages as shared and will allow both old
+         and new processes to share those pages. 
+
+##### What is dirty page ?
+
+       * When memory pages mapped to a file are edited by some process, those edited pages are called dirty pages
+         until they are written to disk. In simpler words, Edited and uncommied memory pages are called dirty pages.
+         Dirty pages are saved in page cache until they are written/commited to disk. 
+
+       * Dirty pages are periodically transferred (as well as with the system calls sync or fsync) to the underlying
+         storage device. 
+
+       * Up to and including the 2.6.31 version of the Linux kernel, the pdflush threads ensured that dirty pages were
+         periodically written to the underlying storage device.
+
+       * Since pdflush had several performance disadvantages, Jens Axboe developed a new, more effective writeback
+         mechanism for Linux Kernel version 2.6.32. This approach provides threads for each device attached to a server. 
+         These threads are managed by a service called "flushd". 
+
+### Memory issue related Investigation: 
+
+     1. Review the output of free command:
+
+        $ free -m 
+                       total        used        free      shared  buff/cache   available
+        Mem:           32106        3130       20774          11        8201       28448
+        Swap:           1907          13        1894
  
 
-The Mem row lists how the available memory is being used. The first value on this line is the total amount of memory available on the system. In this case the machine has 15998332 bytes available, about 16GB. The second value in row under the used column indicates how much of that memory is currently been allocated for some use. The free column show that there is 1475716 bytes, a bit less than 1.5GB unallocated memory. The shared column is obsolete on modern Linux kernels and should be ignored. 
+     2. Review the SAR command output for continuously heavy Swap in/out activity. This is represented by high values
+        of "pswpin" / "pswpout" 
 
-The buffers column indicates the amount of memory used to store raw disk blocks while the cached column indcates the amount of memory used to store files from disk. The kernel can dynamically adjust the amount of memory allocated for the buffers and cached files. The -/+ buffers/cache line describes how much memory is used excluding the kernel buffers and cached files. In the example above 9.9GB are being used. This machine is not suffering from excessive memory use and has 6G that could be allocated for other uses if need be. 
+        Example of sar output : 
 
-Linux support virtual memory, which allows applications to use more memory than physical RAM installed on the machine. Linux will use the swap partitions on the disk drives to store the data that is not currently being used and automatically move data between RAM memory and disk drives as required. However, it is very slow to move data between physical RAM and disk. In the example above there is 219564 bytes, about 220MB, of swap that is in use. However, this is unlikely to be a significant problem because of large amount of free memory (6GB) listed on the -/+ buffers/cache line. 
+        $ sar -W
 
-For systems with large amount of memory the -h (human output) option for free may make it easier to read the output. It provides scaled output describing the amounts in kilobytes (K), megabytes (M), and gigabytes (G). Below is an example output: 
+            12:00:00 AM  pswpin/s pswpout/s 
+            05:20:00 AM  0.21      0.00 
+            05:30:00 AM  0.08      0.85 
+            05:40:00 AM  0.47      0.00 
+            05:50:00 AM  3.58      1.71 
+            06:00:00 AM  2.48      0.00 
+            06:10:00 AM 39.91      7.17   <<<<----- High swap-in and swap-out detected 
+            06:20:00 AM  0.21      2.72 
+            06:30:00 AM 13.30      1.04 
 
-$ free -h 
-             total       used       free     shared    buffers     cached 
-Mem:           15G       9.7G       5.6G         0B       1.0G       1.6G 
--/+ buffers/cache:       7.0G       8.2G 
-Swap:         5.5G       783M       4.7G 
- 
+          Or you can check these stats using below command, the si/so section to check swapin/swapout.:
 
-In addition to free command, the top command also provides information about overall system memory use. Below is the beginning of the top output which include the overall memory information. It shows that the machine has 15998328 bytes of total memory with 8645132 bytes currently used and an additional 7353196 free. The buffer for devices and cached files occupy 277220 and 3362088 bytes respectively. A relatively small amount of the swap space is being used, only 15864 bytes of the 5734396 bytes of swap available. 
+          $ vmstat 
 
-Raw 
+          procs   -----------memory----------    ---swap--     -----io----      -system--       ------cpu-----
+          r  b     swpd   free   buff  cache      si   so      bi    bo          in   cs        us sy id wa st
+          1  0   62208 21707724 694072 7281500     0    0       1    29            1    1         1  1 98  0  0
 
-top - 12:24:44 up  3:04,  5 users,  load average: 1.96, 2.82, 2.32 
-Tasks: 247 total,   1 running, 246 sleeping,   0 stopped,   0 zombie 
-%Cpu(s):  3.9 us,  1.3 sy,  0.0 ni, 94.0 id,  0.5 wa,  0.2 hi,  0.1 si,  0.0 st 
-KiB Mem:  15998328 total,  8645132 used,  7353196 free,   277220 buffers 
-KiB Swap:  5734396 total,    15864 used,  5718532 free,  3362088 cached 
+     3. Check the number of major page fault happening on the server using below sar command. This suggests that CPU
+        is mostly busy fetching files from disk/swap rather than serving actual processes.
 
+        $ sar -B
 
-If swap "used" section is 100% or approx then we need to check which application is consuming that. 
-
-## Known Issues 
-
-# Swap memory usage is at 100% 
-
-# Swap memory usage is above the error threshold 
-
-# Swap memory usage is higher than average 
-
-# Why Swap is being used while there is available physical memory? 
-
-Introduction - what is Swap? 
-
-The primary function of Swap space is to utilize disk space from a separate, dedicated partition on the main storage for RAM when the physical main memory fills up and more space is needed. 
-
-To expand on main memory, it is used by two general categories: Page Cache, which are mostly file contents based in storage that have been stored in the RAM for faster loading; and Anonymous Memory, which is mainly comprised from content not backed by storage, such as program stack and temporary variables. 
-
-The kernel uses a memory management program that detects blocks (AKA: pages) of anonymous memory, in which the contents have not been used recently. 
-
-The memory management program swaps out enough of these relatively infrequently used pages of anonymous memory to a special partition on the main storage specifically designated for “paging”, or swapping. This frees up RAM and makes room for more data. 
-
-Those pages of anonymous memory that were swapped out to the Swap partition are tracked by the kernel’s memory management code and can be paged back into RAM if they are needed (AKA: Swapped-in). 
-
-## INVESTIGATION: 
-
-Review the output of free command 
-
-Example: 
-
-Raw 
-
-# free -m 
-              total            used            free            shared       buffers           cached 
-Mem:          516544          399419           117124           5427          41               23272 
--/+ buffers/cache:      376105        140438 
-Swap:        263167           263144            23   <<<<------ 
- 
-
-Review the SAR file output for continuously heavy Swap in/out activity. This is represented by high values of "pswpin" / "pswpout" 
-
-Example of sar output : 
-
-12:00:00 AM  pswpin/s pswpout/s 
-<snip> 
-05:20:00 AM  0.21      0.00 
-05:30:00 AM  0.08      0.85 
-05:40:00 AM  0.47      0.00 
-05:50:00 AM  3.58      1.71 
-06:00:00 AM  2.48      0.00 
-06:10:00 AM 39.91      7.17   <<<<----- 
-06:20:00 AM  0.21      2.72 
-06:30:00 AM 13.30      1.04 
-
-On Runtime, we can refer vmstat command and si/so section to check swapin/swapout.  
- 
-Resolution 1: Increase the system's physical memory 
-
-Resolution 2: Find process's memory regions that are using the most Swap 
-
-Resolution 3: Increase Swap space 
-
-Resolution 4: Flushing the Swap 
-
-Another option is to flush the Swap by utilizing the following commands: 
-
-Raw 
-
-# swapoff -a   
-# swapon -a 
- 
-Warning: Flushing Swap in this way will force the entire contents of swap back into main memory. If your system is already low on memory this may cause it to go into an Out Of Memory condition (OOM). Care and consideration should be taken before using this option. If the system is somewhat low on memory (and not very low) pages may have to be reclaimed while bringing the contents of Swap into memory - and this may degrade performance for a short time. 
-
-Resolution 5: Clear POSIX shared memory (/dev/shm/) 
-
-Resolution 6 : Tune vm.swappiness kernel parameter. 
-
-KEYPOINTS TO REMEMBER  
+            05:20:10 PM  pgpgin/s pgpgout/s   fault/s  majflt/s  pgfree/s pgscank/s pgscand/s pgsteal/s    %vmeff
+            05:30:10 PM      0.00    232.94   1502.78      0.00   1296.10      0.00      0.00      0.00      0.00
+            05:40:10 PM      0.00    624.97   123624.06  123035    682.68      0.00      0.00      0.00      0.00 <<<--- High major faults
+            05:50:10 PM      0.00    130.77    229.73    121873    238.82      0.00      0.00      0.00      0.00 <<<--- High major faults
+            06:00:08 PM      0.05    361.87    303.89      0.00    367.08      0.00      0.00      0.00      0.00
 
 
-The following applies to RHEL 7 : 
+     4. Check the kbdirty value in below command output. 
 
-Swapping will [only] occur during a low-memory condition 
+        => kbdirty: Amount of memory in kilobytes waiting to get written back to the disk. If this value is very high,
+                    It means either there is something wrong with pdflush/flushd service or CPU is unable to write 
+                    changed pages(dirty pages) back to disk with expected speed. Now you will have to check the disk
+                    performance which we will discuss in detail in our next topic. 
 
-The value of /proc/sys/vm/swappiness dictates how 'aggressively' the Linux kernel will swap memory pages [during memory reclaim] 
+      05:20:10 PM kbmemfree   kbavail kbmemused  %memused kbbuffers  kbcached  kbcommit   %commit  kbactive   kbinact   kbdirty
+      05:30:10 PM  21267192  29123732   3075004      9.35    716156   7213396   9264428     26.60   4503104   6166304       252
+      05:40:10 PM  21286860  29144116   3054432      9.29    716524   7213628   9359668     26.87   4481716   6173528       772
+      05:50:10 PM  21279032  29136796   3061676      9.31    716684   7213984   9265528     26.60   4506340   6178268       436
+      06:00:08 PM  21266616  29125040   3073608      9.35    717036   7214472   9254568     26.57   4508936   6169368      1368
 
-The 'swappiness' value can be between 0 and 100. 
 
-In the context of global memory reclaim (i.e. when there is no suitable page to satisfy an allocation request), swappiness set to 0 does not prevent swapping entirely. 
+     5. Tune vm.swappiness kernel parameter:
 
-In the context of cgroup memory reclaim (i.e. when a memory cgroup hits or breaches it's limit_in_bytes), memory.swappiness set to 0 does prevent swapping. 
+        Depending on your System's usage and high swap-in and swap-outs on your system, you can lower the value of
+        vm.swappiness kernel parameter accordingly. 
 
-In the context of memory cgroup and global memory reclaim, when the system is close to OOM condition, a positive swappiness value will force the Linux kernel to consider both anon and file-backed pages equally. 
+        For high Memory centric applications like Databases, Please try to keep the vm.swappiness as low as possible,
+        somewhere between 5 to 10.
 
-Now "swapping" will not occur unless the system enters a low-memory condition i.e. when a memory allocation request may put the number of available memory beyond the low water mark in a zone (see __alloc_pages_nodemask() -> __alloc_pages_slowpath()). 
+          $ cat /proc/sys/vm/swappiness
+            60
 
-As per Documentation/sysctl/vm.txt 'swappiness' "... is used to define how aggressive the kernel will swap memory pages [during memory reclaim]." The swappiness value can be set between 0 and 100, the default value is 60. 
+          => open /etc/sysctl.conf as root. Then, change or add this line to the file:
+              vm.swappiness = 10
 
-A value of 0 does not prevent swap. In fact, the kernel will initiate swap when the amount of free and file-backed pages is less than the high water mark in a zone irrespective of the swappiness value (see get_scan_count()). 
+          => for changing the swappiness value temporarily try this command:
+                $ echo 50 > /proc/sys/vm/swappiness
 
-If no swap area(s) exists then swappiness is not applicable. 
+        A value of 0 does not prevent swap. In fact, the kernel will initiate swap when the amount of free and
+        file-backed pages is less than the high water mark in a zone irrespective of the swappiness value. 
 
-Now the above is correct in the context of global memory reclaim. 
 
-Under Red Hat Enterprise Linux 7, we build the kernel with Kconfig option CONFIG_MEMCG enabled. Therefore a cgroup which is attached to a Memory Resource Controller can have a unique swappiness i.e. a value different to the global or system-wide value i.e. in /proc/sys/vm/swappiness. In other words, it overrides /proc/sys/vm/swappiness for the particular cgroup. 
-
-The value of 'swappiness' is implicitly used in the memory reclaim code path in the context of global and memory cgroup (memcg) reclaim but as indicated above, a value of 0 in a memcg prevents any swapping even if swap area(s) exists. Albeit this could lead to memcg OOM killer if there are no file pages to reclaim. 
-
+ {!horizontal-ads.md!}
 	
-## Troubleshooting Linux performance issue happening due to high Disk IO Usage
+# Troubleshooting Linux performance issue happening due to high Disk IO Usage
 	
-## Troubleshooting Linux OS network performance Issues
+ {!horizontal-ads.md!}
+        
+# Troubleshooting Linux OS network performance Issues
 
 {!multiplex-ads.md!}
 
