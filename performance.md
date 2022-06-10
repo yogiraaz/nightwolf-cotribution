@@ -92,7 +92,7 @@ The output of above script will look like this:
 
  {!horizontal-ads.md!}
 
-# Troubleshooting Linux perfomance isssue happening due to high CPU Usage
+## Troubleshooting Linux perfomance isssue happening due to high CPU Usage
 
    Every performance issue troubleshooting should starts with `top` command:
 
@@ -180,7 +180,7 @@ The output of above script will look like this:
 
 <br>
 
-# Troubleshooting Linux performance issue happening due to high Memory Usage
+## Troubleshooting Linux performance issue happening due to high Memory Usage
 
     d). 4th and 5th line in 'top' output contains Memory stats in Kibibytes(kib).
         There is slight difference between kilibyte and kibibyte i.e 1 kB = 1000 bytes. 1 KiB = 1024 bytes.
@@ -407,11 +407,10 @@ The output of above script will look like this:
 
  {!horizontal-ads.md!}
 	
-# Troubleshooting Linux performance issue happening due to high Disk IO Usage
+## Troubleshooting Linux performance issue happening due to high Disk IO Usage
 	
- {!horizontal-ads.md!}
         
-# Troubleshooting Linux OS network performance Issues
+## Troubleshooting Linux OS network performance Issues
 
 {!multiplex-ads.md!}
 
