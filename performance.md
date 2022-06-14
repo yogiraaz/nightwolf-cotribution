@@ -182,7 +182,7 @@ The output of above script will look like this:
 
 ## Troubleshooting Linux performance issue happening due to high Memory Usage
 
-    d). 4th and 5th line in 'top' output contains Memory stats in Kibibytes(kib).
+    4th and 5th line in 'top' output contains Memory stats in Kibibytes(kib).
         There is slight difference between kilibyte and kibibyte i.e 1 kB = 1000 bytes. 1 KiB = 1024 bytes.
 
         As a default, line 4 reflects physical memory, classified as:
@@ -281,12 +281,16 @@ The output of above script will look like this:
 
 ### Linux memory management: 
 
-     - When a process in Memory tries to access a file, the Memory Management program check if that File already
-       exists in Memory and what memory pages are mapped to the requested file. For Page faults are raised. 
+     - When a process in Memory tries to access a file, the Memory Management program checks if that File already
+       exists in Memory and what memory pages are mapped to the requested file. For this, Memory Page faults are
+       raised. 
 
-##### What are Page Faults: 
+##### What are Memory Page Faults: 
        
-        It is a condition when a process in execution can not find memory pages for a file in Virtual memory space. 
+      - It is a condition when a process in execution can not find memory pages for a file in Virtual memory space. 
+      - Memory Page Faults are of 2 types:
+         * Major Page Faults
+         * Minor Page Faults
 
 ##### What are Major page faults ?
 

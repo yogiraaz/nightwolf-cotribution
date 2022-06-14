@@ -325,8 +325,7 @@
          - Paused: This state happens when the running container has been paused.
          - Stopped: This state happens when the running container has been stopped.
          - Deleted: In this, the container is in a dead state.
-
-  ![](../img/docker_life_cycle.png)
+![](../img/docker_life_cycle.png)
 
 34. How to use docker for multiple application environments?
 

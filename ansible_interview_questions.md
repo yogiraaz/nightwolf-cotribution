@@ -7,7 +7,7 @@
 <br>
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
-
+ {!inpage-ads.md!}
 ---
 
 1. What is Ansible architecture ?

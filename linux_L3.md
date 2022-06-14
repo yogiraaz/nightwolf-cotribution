@@ -183,10 +183,13 @@
                  Note: For LVM, set issue_discards=1 in lvm.conf.
                  Note: On Dell, TRIM/discard is only available on RAID controllers >= PERC H710
 
-             h). For SSD, you don't want controller caching for performance reasons. By default HPs turn caching off.
+             h). For SSD, you do not want controller caching for performance reasons. By default HPs turn caching
+                 off.
+
                  Dell: Cut-through IO (CTIO) is an IO accelerator for SSD arrays that boosts the throughput of 
                  devices connected to the PERC Controller. It is enabled through disabling the write-back cache 
                  (enable writethrough cache) and disabling Read Ahead.
+
                  HP: On servers with SSD drives, write caching appears to be disabled by default for performance 
                      reasons (there is no need for write caching on SSD drives which are fast enough). Writes to SSD
                      drives will not be acknowledged until the data is actually written to disk:
